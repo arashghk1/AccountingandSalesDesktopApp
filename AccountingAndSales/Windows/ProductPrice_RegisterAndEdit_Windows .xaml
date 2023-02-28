@@ -1,0 +1,305 @@
+﻿<Window
+    x:Class="AccountingAndSales.Windows.ProductPrice_RegisterAndEdit_Windows"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:AccountingAndSales.Windows"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="ProductPrice_RegisterAndEdit_Windows ."
+    Width="500"
+    Height="450"
+    AllowsTransparency="True"
+    Background="Transparent"
+    Loaded="Window_Loaded"
+    WindowStartupLocation="CenterScreen"
+    WindowState="Normal"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <BeginStoryboard>
+                <Storyboard Storyboard.TargetProperty="Opacity" Duration="00:00:00:01">
+                    <DoubleAnimation From="0" To="3" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+
+    <Grid>
+        <Rectangle
+            x:Name="rectang_0"
+            Width="500"
+            Height="450"
+            Margin="-7,30,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Fill="White"
+            Opacity="0"
+            RadiusX="15"
+            RadiusY="15"
+            Stroke="Black"
+            StrokeThickness="2" />
+        <Rectangle
+            x:Name="rectang_1"
+            Width="500"
+            Height="100"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Fill="#FF34495E"
+            MouseDown="rectang_1_MouseDown"
+            RadiusX="15"
+            RadiusY="15"
+            Stroke="Black" />
+        <Label
+            Margin="89,4,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Accounting And Sales Application"
+            FontFamily="Calibri Light"
+            FontSize="22"
+            FontStyle="Normal"
+            FontWeight="Bold"
+            Foreground="White" />
+        <Label
+            Name="LabelProductPrice_RegisterAndEdit_Header"
+            Margin="139,43,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Product Price Save"
+            FontFamily="Calibri Light"
+            FontSize="18"
+            FontStyle="Normal"
+            FontWeight="Bold"
+            Foreground="White" />
+        <Image
+            Width="79"
+            Height="84"
+            Margin="8,5,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/Images/LoginLock_1.png" />
+        <Image
+            Width="49"
+            Height="45"
+            Margin="94,36,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/Images/UserLogin.png" />
+
+        <Rectangle
+            x:Name="rectang_2"
+            Width="500"
+            Height="345"
+            Margin="0,100,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Fill="#FDFEFE"
+            RadiusX="15"
+            RadiusY="15"
+            Stroke="Black"
+            StrokeThickness="2" />
+
+        <Image
+            Width="84"
+            Height="79"
+            Margin="411,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Cursor="Hand"
+            MouseDown="Image_MouseDown"
+            RenderTransformOrigin="0.492,0.501"
+            Source="/Images/Exit.png" />
+
+
+
+
+        <TextBox
+            x:Name="PriceSellingTextBox"
+            Margin="13,213,237,211"
+            Padding="5,3,3,3"
+            BorderBrush="#FFD42AE3"
+            BorderThickness="0,0,0,2"
+            ClipToBounds="True"
+            FontFamily="Calibri"
+            FontSize="16"
+            MaxLength="11"
+            PreviewTextInput="PriceSelling_PreviewTextInput_Event">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock
+            Margin="23,0,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="Price Selling">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=PriceSellingTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+
+        <TextBox
+            x:Name="DescriptionTextBox"
+            Margin="18,272,232,96"
+            Padding="5,3,3,3"
+            BorderBrush="#FFD42AE3"
+            BorderThickness="1,1,1,2"
+            ClipToBounds="True"
+            FontFamily="Calibri"
+            FontSize="16"
+            MaxLength="250">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock
+            Margin="28,275,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="Description">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=DescriptionTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <Label
+            Margin="16,117,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="System User Activation Is : "
+            FontFamily="Calibri Light"
+            FontSize="14"
+            FontStyle="Normal"
+            FontWeight="Bold"
+            Foreground="Black" />
+        <Label
+            Name="UserRegisterationFullName_Label"
+            Width="127"
+            Margin="181,117,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="........."
+            FontFamily="Calibri Light"
+            FontSize="14"
+            FontStyle="Normal"
+            FontWeight="Bold"
+            Foreground="Red" />
+        <Label
+            Margin="273,165,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="$"
+            FontFamily="Calibri Light"
+            FontSize="18"
+            FontWeight="Bold"
+            Foreground="Blue" />
+        <Label
+            Margin="273,217,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="$"
+            FontFamily="Calibri Light"
+            FontSize="18"
+            FontWeight="Bold"
+            Foreground="Blue" />
+        <TextBox
+            x:Name="PriceBuyingTextBox"
+            Margin="13,161,237,263"
+            Padding="5,3,3,3"
+            BorderBrush="#FFD42AE3"
+            BorderThickness="0,0,0,2"
+            ClipToBounds="True"
+            FontFamily="Calibri"
+            FontSize="16"
+            MaxLength="11"
+            PreviewTextInput="PriceBuying_PreViewTextInput">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock
+            Margin="23,165,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="Price Buying">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=PriceBuyingTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <Label
+            x:Name="ProductNameLable"
+            Width="154"
+            Margin="318,118,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="........."
+            FontFamily="Calibri Light"
+            FontSize="14"
+            FontStyle="Normal"
+            FontWeight="Bold"
+            Foreground="Red" />
+        <Button Name="Btn_SaveAndEdit"
+                Content="Save New Pice" 
+                HorizontalAlignment="Left" 
+                Margin="107,394,0,0" 
+                Foreground="White"
+                VerticalAlignment="Top"
+                Style="{StaticResource RoundCorner}" Width="117" Height="29" Click="BtnSaveAndEdit_Click"/>
+        <Button Content="Exit" 
+                HorizontalAlignment="Left" 
+                Margin="258,394,0,0" 
+                Foreground="White"
+                VerticalAlignment="Top"
+                Style="{StaticResource RoundCorner}" Width="117" Height="29" Click="BtnClose_Click"/>
+
+
+    </Grid>
+</Window>

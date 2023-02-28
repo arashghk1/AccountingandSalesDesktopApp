@@ -1,0 +1,417 @@
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\bin\Debug\AccountingAndSales.exe.config
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\bin\Debug\AccountingAndSales.exe
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\bin\Debug\AccountingAndSales.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.AssemblyReference.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.SuggestedBindingRedirects.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\App.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\AccountingAndSales_MarkupCompile.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\AccountingAndSales_MarkupCompile.lref
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\AccountingAndSales.g.resources
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\AccountingAndSales.Properties.Resources.resources
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.GenerateResource.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.CoreCompileInputs.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\AccountingAndSales.exe
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\AccountingAndSales.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\LoginWindows.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\LoginWindows.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\Windows\MainWindows.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\Windows\MainWindows.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\App.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\bin\Debug\Microsoft.Windows.Shell.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\bin\Debug\RibbonControlsLibrary.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\bin\Debug\Microsoft.Windows.Shell.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\bin\Debug\Microsoft.Windows.Shell.xml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\bin\Debug\RibbonControlsLibrary.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\bin\Debug\RibbonControlsLibrary.xml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.CopyComplete
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\Windows\DefindUsers_Window.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\Windows\DefindUsers_Window.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\Windows\Facebook.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\AccountingAndSales\obj\Debug\Windows\Facebook.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\AccountingAndSales.exe.config
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\AccountingAndSales.exe
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\AccountingAndSales.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\BussinesEntity.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\BussinesLogicLayer.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\EntityFramework.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DataAccessLayer.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\BussinesEntity.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\BussinesEntity.dll.config
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\BussinesLogicLayer.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\EntityFramework.xml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DataAccessLayer.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.AssemblyReference.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.SuggestedBindingRedirects.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\LoginWindows.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Invoice_Window.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\SetNewPassword_Window.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingUserLog_Winsdows.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\TransactionInProduct_AddAndEdit.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ProductPrice_RegisterAndEdit_Windows .g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Product_RegisterAndEdit_Windows .g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\User_RegisterAndEdit_Window.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ProductPriceManagment_Window.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Customer_RegisterAndEdit_Windows.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingProductEntryAndExit_Window.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingProduct_Window.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingCustomer_Winsdows.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingDefindUsers_Window.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\MainWindows.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\App.g.cs
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales_MarkupCompile.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales_MarkupCompile.lref
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\App.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\LoginWindows.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Invoice_Window.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\SetNewPassword_Window.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingUserLog_Winsdows.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\TransactionInProduct_AddAndEdit.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ProductPrice_RegisterAndEdit_Windows .baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Product_RegisterAndEdit_Windows .baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\User_RegisterAndEdit_Window.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ProductPriceManagment_Window.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Customer_RegisterAndEdit_Windows.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingProductEntryAndExit_Window.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingProduct_Window.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingCustomer_Winsdows.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingDefindUsers_Window.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\MainWindows.baml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.g.resources
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.Properties.Resources.resources
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.GenerateResource.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.CoreCompileInputs.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.CopyComplete
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.exe
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\AccountingAndSales.exe.config
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\AccountingAndSales.exe
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\AccountingAndSales.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\BussinesEntity.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\BussinesLogicLayer.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.Shared.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\EntityFramework.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\EntityFramework.SqlServer.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\LiveCharts.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\LiveCharts.Wpf.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\Microsoft.Web.WebView2.Core.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\NugetDemo.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\sapbusinessobjects.wpf.viewer.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\SAPBusinessObjects.WPF.ViewerShared.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\wpftoolkit.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DataAccessLayer.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\stdole.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\BussinesEntity.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\BussinesEntity.dll.config
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\BussinesLogicLayer.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\EntityFramework.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\EntityFramework.SqlServer.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\LiveCharts.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\LiveCharts.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\LiveCharts.Wpf.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\LiveCharts.Wpf.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\Microsoft.Web.WebView2.Core.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DataAccessLayer.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.AssemblyReference.cache
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.SuggestedBindingRedirects.cache
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CRQUERYENGINE.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalAnalysisCommLayerLib.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalEnterpriseLib.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalInfoStoreLib.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalPluginMgrLib.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalReportsCommonObjectModelLib.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalReportsControllersLib.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalReportsCubeDefModelLib.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalReportsDataDefModelLib.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalReportSourceLib.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalReportsReportDefModelLib.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalSharedElementPluginLib.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.ResolveComReference.cache
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\LoginWindows.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\BaseReporting_Window.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Invoice_Window.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Sales_Charts_Window.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\SetNewPassword_Window.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingInvoice_Winsdows .g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingReport_Window.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\TransactionInProduct_AddAndEdit.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ProductPrice_RegisterAndEdit_Windows .g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Product_RegisterAndEdit_Windows .g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\LicencingAndRegisterFirstUser_Window.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\User_RegisterAndEdit_Window.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ProductPriceManagment_Window.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Customer_RegisterAndEdit_Windows.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingProductEntryAndExit_Window.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingProduct_Window.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingCustomer_Winsdows.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingDefindUsers_Window.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\MainWindows.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\App.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales_Content.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales_MarkupCompile.cache
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales_MarkupCompile.lref
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\App.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\LoginWindows.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\BaseReporting_Window.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Invoice_Window.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Sales_Charts_Window.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\SetNewPassword_Window.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingInvoice_Winsdows .baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingReport_Window.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\TransactionInProduct_AddAndEdit.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ProductPrice_RegisterAndEdit_Windows .baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Product_RegisterAndEdit_Windows .baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\LicencingAndRegisterFirstUser_Window.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\User_RegisterAndEdit_Window.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ProductPriceManagment_Window.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Customer_RegisterAndEdit_Windows.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingProductEntryAndExit_Window.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingProduct_Window.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingCustomer_Winsdows.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingDefindUsers_Window.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\MainWindows.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.g.resources
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.Properties.Resources.resources
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.GenerateResource.cache
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.CoreCompileInputs.cache
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.CopyComplete
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.exe
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Charts.v22.2.Core.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Data.v22.2.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.DataVisualization.v22.2.Core.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Drawing.v22.2.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Mvvm.v22.2.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Printing.v22.2.Core.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Charts.v22.2.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Core.v22.2.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Printing.v22.2.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Data.Desktop.v22.2.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.DocumentViewer.v22.2.Core.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Ribbon.v22.2.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Docking.v22.2.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.LayoutControl.v22.2.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.RichEdit.v22.2.Core.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Office.v22.2.Core.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Grid.v22.2.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Grid.v22.2.Core.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Layout.v22.2.Core.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Charts.v22.2.Core.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Data.v22.2.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Mvvm.v22.2.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Charts.v22.2.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Core.v22.2.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Printing.v22.2.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.DocumentViewer.v22.2.Core.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Ribbon.v22.2.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Docking.v22.2.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.LayoutControl.v22.2.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.RichEdit.v22.2.Core.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Office.v22.2.Core.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Grid.v22.2.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Grid.v22.2.Core.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Layout.v22.2.Core.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.exe.licenses
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Views\SalesChart_View.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Views\SalesChart_View.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingUserLog_Winsdow.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingUserLog_Winsdow.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Views\SalesChartByCustomerName_View.g.cs
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Views\SalesChartByCustomerName_View.baml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Charts.v22.2.resources.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\runtimes\win-x86\native\WebView2Loader.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\runtimes\win-x64\native\WebView2Loader.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\runtimes\win-arm64\native\WebView2Loader.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\AccountingAndSales.exe.config
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\AccountingAndSales.exe
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\AccountingAndSales.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\BussinesEntity.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\BussinesLogicLayer.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportSource.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.Shared.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Charts.v22.2.Core.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Data.v22.2.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.DataVisualization.v22.2.Core.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Drawing.v22.2.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Mvvm.v22.2.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Printing.v22.2.Core.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Charts.v22.2.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Core.v22.2.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Printing.v22.2.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\EntityFramework.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\EntityFramework.SqlServer.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\LiveCharts.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\LiveCharts.Wpf.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\Microsoft.Web.WebView2.Core.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\Microsoft.Windows.Shell.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\NugetDemo.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\RibbonControlsLibrary.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\sapbusinessobjects.wpf.viewer.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\SAPBusinessObjects.WPF.ViewerShared.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DataAccessLayer.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Data.Desktop.v22.2.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.DocumentViewer.v22.2.Core.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Ribbon.v22.2.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Docking.v22.2.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.LayoutControl.v22.2.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.RichEdit.v22.2.Core.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Office.v22.2.Core.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Grid.v22.2.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Grid.v22.2.Core.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Layout.v22.2.Core.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\stdole.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\BussinesEntity.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\BussinesEntity.dll.config
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\BussinesLogicLayer.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Charts.v22.2.Core.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Data.v22.2.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Mvvm.v22.2.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Charts.v22.2.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Core.v22.2.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Printing.v22.2.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\EntityFramework.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\EntityFramework.SqlServer.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\LiveCharts.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\LiveCharts.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\LiveCharts.Wpf.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\LiveCharts.Wpf.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\Microsoft.Web.WebView2.Core.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\Microsoft.Windows.Shell.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\Microsoft.Windows.Shell.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\RibbonControlsLibrary.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\RibbonControlsLibrary.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DataAccessLayer.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.DocumentViewer.v22.2.Core.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Ribbon.v22.2.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Docking.v22.2.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.LayoutControl.v22.2.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.RichEdit.v22.2.Core.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Office.v22.2.Core.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Grid.v22.2.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Grid.v22.2.Core.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\bin\Debug\DevExpress.Xpf.Layout.v22.2.Core.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.AssemblyReference.cache
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.SuggestedBindingRedirects.cache
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CRQUERYENGINE.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalAnalysisCommLayerLib.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalEnterpriseLib.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalInfoStoreLib.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalPluginMgrLib.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalReportsCommonObjectModelLib.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalReportsControllersLib.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalReportsCubeDefModelLib.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalReportsDataDefModelLib.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalReportSourceLib.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalReportsReportDefModelLib.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Interop.CrystalSharedElementPluginLib.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.ResolveComReference.cache
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\LoginWindows.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Views\SalesChartByCustomerName_View.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Views\SalesChart_View.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\BaseReporting_Window.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Invoice_Window.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Sales_Charts_Window.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\SetNewPassword_Window.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingInvoice_Winsdows .g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingReport_Window.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingUserLog_Winsdow.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\TransactionInProduct_AddAndEdit.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ProductPrice_RegisterAndEdit_Windows .g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Product_RegisterAndEdit_Windows .g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\LicencingAndRegisterFirstUser_Window.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\User_RegisterAndEdit_Window.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ProductPriceManagment_Window.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Customer_RegisterAndEdit_Windows.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingProductEntryAndExit_Window.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingProduct_Window.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingCustomer_Winsdows.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingDefindUsers_Window.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\MainWindows.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\App.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales_Content.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales_MarkupCompile.cache
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales_MarkupCompile.lref
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\App.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\LoginWindows.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Views\SalesChartByCustomerName_View.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Views\SalesChart_View.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\BaseReporting_Window.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Invoice_Window.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Sales_Charts_Window.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\SetNewPassword_Window.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingInvoice_Winsdows .baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingReport_Window.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingUserLog_Winsdow.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\TransactionInProduct_AddAndEdit.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ProductPrice_RegisterAndEdit_Windows .baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Product_RegisterAndEdit_Windows .baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\LicencingAndRegisterFirstUser_Window.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\User_RegisterAndEdit_Window.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ProductPriceManagment_Window.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\Customer_RegisterAndEdit_Windows.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingProductEntryAndExit_Window.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingProduct_Window.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingCustomer_Winsdows.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\ShowingDefindUsers_Window.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\Windows\MainWindows.baml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.g.resources
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.Properties.Resources.resources
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.GenerateResource.cache
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.exe.licenses
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.CoreCompileInputs.cache
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.csproj.CopyComplete
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.exe
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\AccountingAndSales\obj\Debug\AccountingAndSales.pdb

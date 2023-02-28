@@ -1,0 +1,465 @@
+﻿<Window
+    x:Class="AccountingAndSales.Windows.User_RegisterAndEdit_Window"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:AccountingAndSales.Windows"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="User_RegisterAndEdit_Window"
+    Width="500"
+    Height="450"
+    AllowsTransparency="True"
+    Background="Transparent"
+    Loaded="Window_Loaded"
+    WindowStartupLocation="CenterScreen"
+    WindowState="Normal"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <BeginStoryboard>
+                <Storyboard Storyboard.TargetProperty="Opacity" Duration="00:00:00:01">
+                    <DoubleAnimation From="0" To="3" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <Rectangle
+            x:Name="rectang_0"
+            Width="500"
+            Height="450"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Fill="White"
+            Opacity="0"
+            RadiusX="15"
+            RadiusY="15"
+            Stroke="Black"
+            StrokeThickness="2" />
+        <Rectangle
+            x:Name="rectang_1"
+            Width="500"
+            Height="100"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Fill="#FF34495E"
+            MouseDown="rectang_1_MouseDown"
+            RadiusX="15"
+            RadiusY="15"
+            Stroke="Black" />
+        <Label
+            Margin="89,4,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Accounting And Sales Application"
+            FontFamily="Calibri Light"
+            FontSize="22"
+            FontStyle="Normal"
+            FontWeight="Bold"
+            Foreground="White" />
+        <Label
+            Name="LabelUserRegisterAndEdit"
+            Margin="139,43,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="System User Register"
+            FontFamily="Calibri Light"
+            FontSize="18"
+            FontStyle="Normal"
+            FontWeight="Bold"
+            Foreground="White" />
+        <Image
+            Width="79"
+            Height="84"
+            Margin="8,5,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/Images/LoginLock_1.png" />
+        <Image
+            Width="49"
+            Height="45"
+            Margin="94,36,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/Images/UserLogin.png" />
+
+        <Rectangle
+            x:Name="rectang_2"
+            Width="500"
+            Height="345"
+            Margin="0,101,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Fill="#FDFEFE"
+            RadiusX="15"
+            RadiusY="15"
+            Stroke="Black"
+            StrokeThickness="2" />
+
+        <Button
+            x:Name="BtnUserRegisterAndEdit"
+            Width="130"
+            Height="34"
+            Margin="100,383,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Button_Click"
+            Content="New User Register"
+            FontWeight="Bold"
+            Foreground="White"
+            Style="{DynamicResource RoundCorner}"
+            TabIndex="7" />
+        <Button
+            Width="114"
+            Height="34"
+            Margin="251,383,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="#FF2865DE"
+            BorderBrush="#FF517A90"
+            Content="Exit"
+            FontWeight="Bold"
+            Foreground="White"
+            Style="{DynamicResource RoundCorner}"
+            TabIndex="9" />
+
+        <Image
+            Width="84"
+            Height="79"
+            Margin="411,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Cursor="Hand"
+            MouseDown="Image_MouseDown"
+            RenderTransformOrigin="0.492,0.501"
+            Source="/Images/Exit.png" />
+
+
+
+        <TextBox
+            x:Name="FirstNameTextBox"
+            Margin="31,147,280,277"
+            Padding="5,3,3,3"
+            BorderBrush="#FFD42AE3"
+            BorderThickness="0,0,0,2"
+            ClipToBounds="True"
+            FontFamily="Calibri"
+            FontSize="16"
+            MaxLength="60"
+            TabIndex="0">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock
+            Margin="41,151,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="First Name">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=FirstNameTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+
+
+
+        <TextBox
+            x:Name="TelphoneNumberTextBox"
+            Margin="31,188,280,236"
+            Padding="5,3,3,3"
+            HorizontalContentAlignment="Center"
+            BorderBrush="#FFD42AE3"
+            BorderThickness="0,0,0,2"
+            ClipToBounds="True"
+            FontFamily="Calibri"
+            FontSize="16"
+            MaxLength="11"
+            PreviewTextInput="TelphoneNumberTextBox_PreviewTextInput"
+            TabIndex="3">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock
+            Margin="41,192,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="Telphone Number">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=TelphoneNumberTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <Label
+            Margin="61,106,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="System User Activation Is : "
+            FontFamily="Calibri Light"
+            FontSize="14"
+            FontStyle="Normal"
+            FontWeight="Bold"
+            Foreground="Black" />
+        <Label
+            Name="UserRegisterationFullName_Label"
+            Width="196"
+            Margin="226,106,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="........."
+            FontFamily="Calibri Light"
+            FontSize="14"
+            FontStyle="Normal"
+            FontWeight="Bold"
+            Foreground="Red" />
+        <TextBox
+            x:Name="LastNameTextBox"
+            Margin="258,147,53,277"
+            Padding="5,3,3,3"
+            BorderBrush="#FFD42AE3"
+            BorderThickness="0,0,0,2"
+            ClipToBounds="True"
+            FontFamily="Calibri"
+            FontSize="16"
+            MaxLength="60"
+            TabIndex="1">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock
+            Margin="268,151,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="Last Name">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=LastNameTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <TextBox
+            x:Name="AgeTextBox"
+            Margin="258,188,53,236"
+            Padding="5,3,3,3"
+            HorizontalContentAlignment="Center"
+            BorderBrush="#FFD42AE3"
+            BorderThickness="0,0,0,2"
+            ClipToBounds="True"
+            FontFamily="Calibri"
+            FontSize="16"
+            MaxLength="2"
+            PreviewTextInput="AgeTextBox_PreviewTextInput"
+            TabIndex="3">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock
+            Margin="268,192,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="Age">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=AgeTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <TextBox
+            x:Name="UserNameTextBox"
+            Margin="31,234,280,190"
+            Padding="5,3,3,3"
+            BorderBrush="#FFD42AE3"
+            BorderThickness="0,0,0,2"
+            ClipToBounds="True"
+            FontFamily="Calibri"
+            FontSize="16"
+            MaxLength="60"
+            TabIndex="4">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock
+            Margin="41,238,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="UserName">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=UserNameTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <TextBox
+            x:Name="PasswordTextBox"
+            Margin="258,237,53,187"
+            Padding="5,3,3,3"
+            BorderBrush="#FFD42AE3"
+            BorderThickness="0,0,0,2"
+            ClipToBounds="True"
+            FontFamily="Calibri"
+            FontSize="16"
+            MaxLength="60"
+            TabIndex="5">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock
+            Margin="268,241,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="Password">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=PasswordTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <TextBox
+            x:Name="PasswordRepeatTextBox"
+            Margin="258,281,53,143"
+            Padding="5,3,3,3"
+            BorderBrush="#FFD42AE3"
+            BorderThickness="0,0,0,2"
+            ClipToBounds="True"
+            FontFamily="Calibri"
+            FontSize="16"
+            MaxLength="60"
+            TabIndex="6">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock
+            Margin="268,285,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="Password Repeat">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=PasswordRepeatTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <ComboBox
+            Name="UserGenderComboBox"
+            Width="180"
+            Height="22"
+            Margin="31,285,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            SelectedIndex="-1">
+            <ComboBoxItem Content="Male" IsSelected="True" />
+            <ComboBoxItem Content="Female" Cursor="" />
+            <ComboBoxItem Content="Other" />
+        </ComboBox>
+
+    </Grid>
+</Window>
+

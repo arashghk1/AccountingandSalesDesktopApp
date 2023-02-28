@@ -1,0 +1,285 @@
+﻿<Window
+    x:Class="AccountingAndSales.Windows.Product_RegisterAndEdit_Windows"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:AccountingAndSales.Windows"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Product_RegisterAndEdit_Windows"
+    Width="500"
+    Height="450"
+    AllowsTransparency="True"
+    Background="Transparent"
+    Loaded="Window_Loaded"
+    WindowStartupLocation="CenterScreen"
+    WindowState="Normal"
+    WindowStyle="None"
+    mc:Ignorable="d" Closing="Window_Closing" Closed="Window_Closed">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Loaded">
+            <BeginStoryboard>
+                <Storyboard Storyboard.TargetProperty="Opacity" Duration="00:00:00:01">
+                    <DoubleAnimation From="0" To="3" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+
+    <Grid>
+        <Rectangle
+            x:Name="rectang_0"
+            Width="500"
+            Height="450"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Fill="White"
+            Opacity="0"
+            RadiusX="15"
+            RadiusY="15"
+            Stroke="Black"
+            StrokeThickness="2" />
+        <Rectangle
+            x:Name="rectang_1"
+            Width="500"
+            Height="100"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Fill="#FF34495E"
+            MouseDown="rectang_1_MouseDown"
+            RadiusX="15"
+            RadiusY="15"
+            Stroke="Black" />
+        <Label
+            Margin="89,4,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Accounting And Sales Application"
+            FontFamily="Calibri Light"
+            FontSize="22"
+            FontStyle="Normal"
+            FontWeight="Bold"
+            Foreground="White" />
+        <Label
+            Name="LabelProductRegisterAndEditHeader"
+            Margin="139,43,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Product Register"
+            FontFamily="Calibri Light"
+            FontSize="18"
+            FontStyle="Normal"
+            FontWeight="Bold"
+            Foreground="White" />
+        <Image
+            Width="79"
+            Height="84"
+            Margin="8,5,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/Images/LoginLock_1.png" />
+        <Image
+            Width="49"
+            Height="45"
+            Margin="94,36,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/Images/UserLogin.png" />
+
+        <Rectangle
+            x:Name="rectang_2"
+            Width="500"
+            Height="345"
+            Margin="0,101,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Fill="#FDFEFE"
+            RadiusX="15"
+            RadiusY="15"
+            Stroke="Black"
+            StrokeThickness="2" />
+
+        <Button
+            Name="BtnRegisterAndEdit"
+            Width="110"
+            Height="34"
+            Margin="116,382,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="Button_Click"
+            Content="Product Register"
+            FontWeight="Bold"
+            Foreground="White"
+            Style="{DynamicResource RoundCorner}" />
+        <Button
+            Width="114"
+            Height="34"
+            Margin="250,382,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="#FF2865DE"
+            BorderBrush="#FF517A90"
+            Content="Exit"
+            FontWeight="Bold"
+            Foreground="White"
+            Style="{DynamicResource RoundCorner}" />
+
+        <Image
+            Width="84"
+            Height="79"
+            Margin="411,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Cursor="Hand"
+            MouseDown="Image_MouseDown"
+            RenderTransformOrigin="0.492,0.501"
+            Source="/Images/Exit.png" />
+
+
+
+        <TextBox
+            x:Name="ProductNameTextBox"
+            Margin="56,144,194,280"
+            Padding="5,3,3,3"
+            BorderBrush="#FFD42AE3"
+            BorderThickness="0,0,0,2"
+            ClipToBounds="True"
+            FontFamily="Calibri"
+            FontSize="16"
+            MaxLength="60">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock
+            Margin="66,148,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="Product Name">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=ProductNameTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+
+        <TextBox
+            x:Name="ProductDesctiptionTextBox"
+            Margin="56,185,194,177"
+            Padding="5,3,3,3"
+            AcceptsReturn="True"
+            BorderBrush="#FFD42AE3"
+            BorderThickness="1,1,1,2"
+            ClipToBounds="True"
+            FontFamily="Calibri"
+            FontSize="16"
+            HorizontalScrollBarVisibility="Disabled"
+            MaxLength="250"
+            MaxLines="5"
+            TextWrapping="Wrap"
+            VerticalScrollBarVisibility="Auto">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock
+            Margin="66,188,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="Description">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=ProductDesctiptionTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <Label
+            Margin="61,106,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="System User Activation Is : "
+            FontFamily="Calibri Light"
+            FontSize="14"
+            FontStyle="Normal"
+            FontWeight="Bold"
+            Foreground="Black" />
+        <Label
+            Name="UserRegisterationFullName_Label"
+            Width="196"
+            Margin="226,106,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="........."
+            FontFamily="Calibri Light"
+            FontSize="14"
+            FontStyle="Normal"
+            FontWeight="Bold"
+            Foreground="Red" />
+        <Border
+            Margin="56,285,194,96"
+            BorderBrush="#FF00FF"
+            BorderThickness="1,1,1,5"
+            CornerRadius="10"
+            Cursor="Hand"
+            MouseDown="Border_MouseDown">
+            <Image
+                Name="ProductImageSelection"
+                Width="61"
+                Height="54"
+                Margin="187,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Cursor="Hand"
+                MouseDown="Image_MouseDown_1"
+                RenderTransformOrigin="0.482,0.409"
+                Source="/Images/AddProductImage.png" />
+        </Border>
+        <TextBlock
+            Margin="66,292,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="Add Product Image">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=ProductDesctiptionTextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+    </Grid>
+</Window>

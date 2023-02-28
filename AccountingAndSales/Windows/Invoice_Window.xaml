@@ -1,0 +1,840 @@
+﻿<Window x:Class="AccountingAndSales.Windows.Invoice_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AccountingAndSales.Windows"
+        mc:Ignorable="d"
+        Title="Invoice_Window" Height="750" Width="1100" Background="Transparent" AllowsTransparency="True" WindowStartupLocation="CenterScreen" WindowStyle="None" Loaded="Window_Loaded">
+    <Grid Name="IsMasterGrid">
+
+        <Grid.RowDefinitions>
+            <RowDefinition MinHeight="80" MaxHeight="100" Height="50*"/>
+            <RowDefinition MinHeight="320" MaxHeight="380" Height="181*"/>
+            <RowDefinition Height="144*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MaxWidth="420"/>
+            <ColumnDefinition MaxWidth="700"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Row="1" Grid.Column="0" BorderThickness="4" BorderBrush="MidnightBlue" Grid.ColumnSpan="2" CornerRadius="30">
+
+            <Rectangle Name="UpRectangle" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Fill="White" RadiusX="30" RadiusY="30">
+
+            </Rectangle>
+
+        </Border>
+
+
+        <Border Grid.Row="2" Grid.Column="0" BorderThickness="2" BorderBrush="MidnightBlue" Grid.ColumnSpan="2" CornerRadius="30">
+            <Rectangle Name="IsLableContentRectangle" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Fill="White" RadiusX="30" RadiusY="30" StrokeMiterLimit="12" StrokeThickness="2">
+
+            </Rectangle>
+        </Border>
+
+        <Rectangle Grid.Row="0" Grid.Column="0" 
+            Width="1100"
+            Height="100" 
+            Grid.ColumnSpan="2" 
+            x:Name="Header_Rectangle"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Fill="#FF34495E"
+            RadiusX="15"
+            RadiusY="15"
+            Stroke="Black" MouseDown="Header_Rectangle_MouseDown"/>
+
+        <Label Grid.Row="0" Grid.Column="0" 
+            Margin="89,4,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Accounting And Sales Application"
+            FontFamily="Caliber Light"
+            FontSize="22"
+            FontStyle="Normal"
+            FontWeight="Bold"
+            Foreground="White" Height="37" Width="302" />
+        <Label Grid.Row="0" Grid.Column="0"
+            Margin="139,43,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Create And Register Invoice"
+            FontFamily="Caliber Light"
+            FontSize="18"
+            FontStyle="Normal"
+            FontWeight="DemiBold"
+            Foreground="White" Height="32" Width="208" />
+        <Image Grid.Row="0" Grid.Column="0"
+               Width="79"
+               Height="84"
+               Margin="8,5,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Source="/Images/AddInvoiceLogo.png" />
+        <Image Grid.Row="0" Grid.Column="0"
+               Width="49"
+               Height="45"
+               Margin="94,36,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Source="/Images/ReciptWindowSmallLogo.png" />
+
+        <Image Grid.Row="0"
+               Width="77"
+               Height="79"
+               Margin="583,6,0,0"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Cursor="Hand"
+               Source="/Images/Exit.png" Grid.Column="1" MouseDown="Image_MouseDown" />
+
+        <TextBox
+            x:Name="SearchTextBoxForProduct"
+            Margin="112,274,236,60"
+            Padding="5,3,3,3"
+            BorderBrush="#FFD42AE3"
+            BorderThickness="0,0,0,2"
+            ClipToBounds="True"
+            FontFamily="Caliber"
+            FontSize="16"
+            MaxLength="60" Grid.Row="1" Grid.Column="1" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.781"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.586"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock
+            Margin="122,279,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="Search Product Here ..." Grid.Row="1" Grid.Column="1" Height="16" Width="126">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=SearchTextBoxForProduct}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+        <Button
+            Name="Btn_ProductAddedInInvoice"
+            Width="143"
+            Height="32"
+            Margin="114,313,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="#FF2865DE"
+            BorderBrush="#FF517A90"
+            Content="Product Add"
+            FontWeight="Bold"
+            Foreground="White"
+            Style="{DynamicResource RoundCorner}" Grid.Row="1" Grid.Column="1" Click="Button_Click_1" IsEnabled="False" />
+
+        <DataGrid Grid.Column="0"
+            x:Name="ShowingCustomerDataGrid"
+            Margin="12,92,21,105"
+            AutoGenerateColumns="False"
+            RenderTransformOrigin="0.5,0.5" Grid.Row="1" >
+            <DataGrid.Effect>
+                <DropShadowEffect />
+            </DataGrid.Effect>
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Width="40"
+                    Binding="{Binding Customer_ID}"
+                    Header="ID">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="Black" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Foreground" Value="#17202A" />
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="FontWeight" Value="Bold" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+
+                <DataGridTextColumn
+                    Width="100"
+                    Binding="{Binding Customer_FullName}"
+                    Header="FullName">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="Black" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Foreground" Value="#17202A" />
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="FontWeight" Value="Bold" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn
+                    Width="150"
+                    Binding="{Binding Customer_Address}"
+                    Header="Address">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="Black" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Foreground" Value="#17202A" />
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="FontWeight" Value="Bold" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn
+                    Width="95"
+                    Binding="{Binding Customer_PhoneNumber}"
+                    Header="Tel Number">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="Black" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Foreground" Value="#17202A" />
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="FontWeight" Value="Bold" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+
+            </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Edit Customer">
+                        <MenuItem.Icon>
+                            <Image
+                                Width="20"
+                                Height="20"
+                                Source="/Images/UserLogin.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Header="Delete Customer">
+                        <MenuItem.Icon>
+                            <Image
+                                Width="20"
+                                Height="20"
+                                Source="/Images/UserLogin.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Close">
+                        <MenuItem.Icon>
+                            <Image
+                                Width="20"
+                                Height="20"
+                                Source="/Images/UserLogin.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+
+        <TextBox
+            x:Name="SearchTextBoxCustomer"
+            Margin="19,272,101,63"
+            Padding="5,3,3,3"
+            BorderBrush="#FFD42AE3"
+            BorderThickness="0,0,0,2"
+            ClipToBounds="True"
+            FontFamily="Calibri"
+            FontSize="16"
+            MaxLength="60" Grid.Row="1" Grid.Column="0">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock
+            Name="SaerchTextBoxTextBlock"
+            Margin="30,276,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="Shearch Customer Here ..." Grid.Row="1" Grid.Column="0" Height="16" Width="136">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=SearchTextBoxCustomer}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+        <Button
+            x:Name="Btn_CreateInvoice"
+            Width="143"
+            Height="32"
+            Margin="29,311,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="#FF2865DE"
+            BorderBrush="#FF517A90"
+            Content="Create Invoice"
+            FontWeight="Bold"
+            Foreground="White"
+            Style="{DynamicResource RoundCorner}" Grid.Row="1" Grid.Column="0" Click="Btn_CreateInvoice_Click" />
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Customer Selected" FontSize="15" FontWeight="Bold" FontStyle="Italic" Foreground="Green" Margin="18,6,260,328"/>
+        <Rectangle Height="3" Fill="Blue" Grid.Row="1" Grid.Column="0" Margin="14,36,256,323"/>
+        <Image
+            Width="36"
+            Height="35"
+            Cursor="Hand"
+            Source="/Images/Arrow.png"
+            Grid.Row="1" Grid.Column="0" Margin="164,20,220,307"/>
+        <DataGrid x:Name="ShowingAddedProductDataGrid" AutoGenerateColumns="False" Grid.Row="2" Grid.Column="1" Margin="105,65,10,84" >
+            <DataGrid.Effect>
+                <DropShadowEffect />
+            </DataGrid.Effect>
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Width="80"
+                    Binding="{Binding Product_ID}"
+                    Header="Product ID">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="Black" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Foreground" Value="#17202A" />
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="FontWeight" Value="Bold" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn
+                    Width="140"
+                    Binding="{Binding Product_Name}"
+                    Header="Product Name">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="Black" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Foreground" Value="#17202A" />
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="FontWeight" Value="Bold" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+
+                <DataGridTextColumn
+                    Width="120"
+                    Binding="{Binding InvoiceProduct_BuyingPrice}"
+                    Header="Last Buying Price">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="Black" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Foreground" Value="#17202A" />
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="FontWeight" Value="Bold" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn
+                    Width="120"
+                    Binding="{Binding InvoiceProduct_SellingPrice}"
+                    Header="Last Selling Price">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="Black" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Foreground" Value="#17202A" />
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="FontWeight" Value="Bold" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn
+                    Width="102"
+                    Binding="{Binding InvoiceProduct_Count}"
+                    Header="Product Quantity">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="Black" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Foreground" Value="#17202A" />
+                            <Setter Property="FontFamily" Value="Calibri" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="FontWeight" Value="Bold" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+
+
+            </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Edit Customer">
+                        <MenuItem.Icon>
+                            <Image
+                                Width="20"
+                                Height="20"
+                                Source="/Images/UserLogin.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Header="Delete Customer">
+                        <MenuItem.Icon>
+                            <Image
+                                Width="20"
+                                Height="20"
+                                Source="/Images/UserLogin.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Close">
+                        <MenuItem.Icon>
+                            <Image
+                                Width="20"
+                                Height="20"
+                                Source="/Images/UserLogin.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+
+        <Button
+            Name="Btn_ClosedInvoice"
+            Width="144"
+            Height="32"
+            Margin="346,230,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="#FF2865DE"
+            BorderBrush="#FF517A90"
+            Content="Invoice Closed"
+            FontWeight="Bold"
+            Foreground="White"
+            Style="{DynamicResource RoundCorner}" Grid.Row="2" Grid.Column="1" Click="Button_Click_3" IsEnabled="False"/>
+
+        <Button
+            Name="Btn_ProductDeleteInInvoice"
+            Width="143"
+            Height="32"
+            Margin="158,230,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="#FF2865DE"
+            BorderBrush="#FF517A90"
+            Content="Delete Product"
+            FontWeight="Bold"
+            Foreground="White"
+            Style="{DynamicResource RoundCorner}" Grid.Row="2" Grid.Column="1" Click="Button_Click_2" IsEnabled="False" />
+        <Label Content="Invoice Information" FontSize="15" FontWeight="Bold" FontStyle="Italic" Foreground="Green"  Height="30" Grid.Row="2" Grid.Column="0" Margin="13,2,255,256"/>
+        <Rectangle Height="3" Fill="Blue" Grid.Row="2" Grid.Column="0" Margin="8,29,262,256"/>
+        <Image
+            Cursor="Hand"
+            Source="/Images/LoadInformationLogo.png"
+            Grid.Row="2" Grid.Column="0" Margin="156,6,214,234"/>
+
+        <Label Grid.Row="2" Grid.Column="0" x:Name="SystemUserRegisterNameLabel" Content="...................." FontSize="13" Foreground="Red"  Height="30" Margin="190,90,19,168"/>
+        <Label Grid.Row="2" Grid.Column="0" x:Name="DateTimeLabel" Content="...................." FontSize="13" Foreground="Red"  Height="30" Margin="190,55,19,203"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="System User Register :" FontSize="13" FontWeight="DemiBold"  Height="30" Margin="15,55,260,203"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="DateTime :" FontSize="13" FontWeight="DemiBold"  Height="30" Margin="15,90,260,168"/>
+        <StackPanel Grid.Row="2" Grid.Column="0"  Margin="15,134,255,38" >
+
+            <Label Content="Customer Name :" FontSize="13" FontWeight="DemiBold"  Height="30"/>
+            <Label Content="Invoice ID :" FontSize="13" FontWeight="DemiBold" Height="30"/>
+            <Label Content="Invoice Total Price :" FontSize="13" FontWeight="DemiBold" VerticalAlignment="Top" Grid.Row="2" Grid.Column="0"/>
+            <Label Content="Invoice Buying Price :" FontSize="13" FontWeight="DemiBold" VerticalAlignment="Top" Grid.Row="2" Grid.Column="0"/>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="0" Name="ContainerLablePanel" Margin="190,134,29,40">
+
+            <Label x:Name="CustomerNameLabel" Content="...................." FontSize="13" Foreground="Red"  Height="30"/>
+            <Label x:Name="InvoiceIDLabel" Content="0" FontSize="13" Foreground="Red" Height="30"/>
+            <Label x:Name="TotalPriceLabel" Content="0" FontSize="13" Foreground="Red" Height="30"/>
+            <Label x:Name="TotalBuyingPriceLabel" Content="0" FontSize="13" Foreground="Red"  Height="30"/>
+        </StackPanel>
+
+        <Rectangle Grid.Row="2" Grid.Column="1" Width="150" Height="3" Fill="Blue" Margin="117,33,413,252" />
+        <Image
+            Width="35"
+            Height="35"
+            Margin="267,24,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Cursor="Hand"
+            Source="/Images/Arrow.png" Grid.Row="2" Grid.Column="1" />
+        <DataGrid x:Name="ShowingProductDataGrid" AutoGenerateColumns="False" Grid.Row="1" Grid.Column="1" Margin="104,92,12,105" PreviewMouseLeftButtonDown="ShowingProductDataGrid_PreviewMouseLeftButtonDown" >
+            <DataGrid.Effect>
+                <DropShadowEffect />
+            </DataGrid.Effect>
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Width="80"
+                    Binding="{Binding Product_ID}"
+                    Header="Product ID">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Caliber" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="Black" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Foreground" Value="#17202A" />
+                            <Setter Property="FontFamily" Value="Caliber" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="FontWeight" Value="Bold" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn
+                    Width="180"
+                    Binding="{Binding Product_Name}"
+                    Header="Product Name">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Caliber" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="Black" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Foreground" Value="#17202A" />
+                            <Setter Property="FontFamily" Value="Caliber" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="FontWeight" Value="Bold" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+
+                <DataGridTextColumn
+                    Width="150"
+                    Binding="{Binding Product_LastPrice}"
+                    Header="Product Selling Price">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Caliber" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="Black" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Foreground" Value="#17202A" />
+                            <Setter Property="FontFamily" Value="Caliber" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="FontWeight" Value="Bold" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn
+                    Width="150"
+                    Binding="{Binding Product_LastBuyingPrice}"
+                    Header="Product Buying Price">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Caliber" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="Black" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Foreground" Value="#17202A" />
+                            <Setter Property="FontFamily" Value="Caliber" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="FontWeight" Value="Bold" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn
+                    Width="150"
+                    Binding="{Binding Product_LastInventory}"
+                    Header="Product Available">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="FontFamily" Value="Caliber" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="FontWeight" Value="Bold" />
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            <Setter Property="Foreground" Value="Black" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Foreground" Value="#17202A" />
+                            <Setter Property="FontFamily" Value="Caliber" />
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="FontWeight" Value="Bold" />
+
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+            </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Edit Customer">
+                        <MenuItem.Icon>
+                            <Image
+                                Width="20"
+                                Height="20"
+                                Source="/Images/UserLogin.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Header="Delete Customer">
+                        <MenuItem.Icon>
+                            <Image
+                                Width="20"
+                                Height="20"
+                                Source="/Images/UserLogin.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Close">
+                        <MenuItem.Icon>
+                            <Image
+                                Width="20"
+                                Height="20"
+                                Source="/Images/UserLogin.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+        <Label Grid.Column="1" Grid.Row="1" Content="Product Selected" FontSize="15" FontStyle="Italic" FontWeight="Bold" Foreground="Green" Margin="94,5,456,327"/>
+        <Rectangle Height="3" Fill="Blue" Grid.Row="1" Grid.Column="1" Margin="94,38,458,321"/>
+        <Image
+            Width="36"
+            Height="35"
+            Cursor="Hand"
+            Source="/Images/Arrow.png" Grid.Column="1" Margin="218,18,426,309" Grid.Row="1"/>
+
+
+        <Label Grid.Column="1" Grid.Row="2" Content="Product Added Is : " FontSize="15" FontStyle="Italic" FontWeight="Bold" Foreground="Green" Margin="133,7,406,251"/>
+        <Label Style="{StaticResource MyLabel}"  Grid.Column="1" Grid.Row="1" Content="" FontSize="12" FontStyle="Italic" Foreground="red" Margin="112,61,67,276"/>
+        <TextBox
+            x:Name="ProductCountQuantity_TextBox"
+            Margin="464,277,20,62"
+            Padding="5,3,3,3"
+            BorderBrush="#FFD42AE3"
+            BorderThickness="0,0,0,2"
+            HorizontalContentAlignment="Center"
+            ClipToBounds="True"
+            FontFamily="Caliber"
+            FontSize="16"
+            MaxLength="60" Grid.Row="1" Grid.Column="1" PreviewTextInput="ProductCountQuantity_TextBox_PreviewTextInput">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10" />
+                        </Style>
+                    </Style.Resources>
+
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock
+            Margin="473,279,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="DarkGray"
+            IsHitTestVisible="False"
+            Text="Product Quantity For Selling" Grid.Row="1" Grid.Column="1" Height="16" Width="161">
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=ProductCountQuantity_TextBox}" Value="">
+                            <Setter Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+        <Image Grid.Row="1" Grid.Column="0"
+            Width="126"
+            Height="128"
+            Margin="396,115,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Cursor="Hand"
+            Source="/Images/Arrow_2.png" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180.717"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AccountingAndSales_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="AccountingAndSales_DBEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="sp_Insert_Product">
+      <Parameter Name="Product_Name" Mode="In" Type="String" />
+      <Parameter Name="Product_Description" Mode="In" Type="String" />
+      <Parameter Name="Product_Image" Mode="In" Type="Binary" />
+      <Parameter Name="Product_RegisterDate" Mode="In" Type="String" />
+      <Parameter Name="User_ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="Table_Customers" EntityType="AccountingAndSales_DBModel.Table_Customers" />
+    <EntitySet Name="Table_Inventory" EntityType="AccountingAndSales_DBModel.Table_Inventory" />
+    <EntitySet Name="Table_Product" EntityType="AccountingAndSales_DBModel.Table_Product" />
+    <EntitySet Name="Table_ProductPriceManagment" EntityType="AccountingAndSales_DBModel.Table_ProductPriceManagment" />
+    <EntitySet Name="Table_Users" EntityType="AccountingAndSales_DBModel.Table_Users" />
+    <EntitySet Name="Users_View" EntityType="AccountingAndSales_DBModel.Users_View" />
+    <EntitySet Name="View_Customer" EntityType="AccountingAndSales_DBModel.View_Customer" />
+    <EntitySet Name="View_Inventory" EntityType="AccountingAndSales_DBModel.View_Inventory" />
+    <EntitySet Name="View_Product" EntityType="AccountingAndSales_DBModel.View_Product" />
+    <EntitySet Name="View_ProductPriceManagment" EntityType="AccountingAndSales_DBModel.View_ProductPriceManagment" />
+    <AssociationSet Name="FK_Table_Customers_Table_Users" Association="AccountingAndSales_DBModel.FK_Table_Customers_Table_Users">
+      <End Role="Table_Users" EntitySet="Table_Users" />
+      <End Role="Table_Customers" EntitySet="Table_Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_Inventory_Table_Product" Association="AccountingAndSales_DBModel.FK_Table_Inventory_Table_Product">
+      <End Role="Table_Product" EntitySet="Table_Product" />
+      <End Role="Table_Inventory" EntitySet="Table_Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_Inventory_Table_Users" Association="AccountingAndSales_DBModel.FK_Table_Inventory_Table_Users">
+      <End Role="Table_Users" EntitySet="Table_Users" />
+      <End Role="Table_Inventory" EntitySet="Table_Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_Product_Table_Users" Association="AccountingAndSales_DBModel.FK_Table_Product_Table_Users">
+      <End Role="Table_Users" EntitySet="Table_Users" />
+      <End Role="Table_Product" EntitySet="Table_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_ProductPriceManagment_Table_Product" Association="AccountingAndSales_DBModel.FK_Table_ProductPriceManagment_Table_Product">
+      <End Role="Table_Product" EntitySet="Table_Product" />
+      <End Role="Table_ProductPriceManagment" EntitySet="Table_ProductPriceManagment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_ProductPriceManagment_Table_Users" Association="AccountingAndSales_DBModel.FK_Table_ProductPriceManagment_Table_Users">
+      <End Role="Table_Users" EntitySet="Table_Users" />
+      <End Role="Table_ProductPriceManagment" EntitySet="Table_ProductPriceManagment" />
+    </AssociationSet>
+    <FunctionImport Name="sp_UpdateLastPrice_Product">
+      <Parameter Name="Product_ID" Mode="In" Type="Int32" />
+      <Parameter Name="Product_LastPrice" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(AccountingAndSales_DBModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(AccountingAndSales_DBModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_Update_ProductLastQuantity">
+      <Parameter Name="Inverntory_Count" Mode="In" Type="Int64" />
+      <Parameter Name="Product_ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="sysdiagrams" EntityType="AccountingAndSales_DBModel.sysdiagram" />
+    <EntitySet Name="Table_UserLog" EntityType="AccountingAndSales_DBModel.Table_UserLog" />
+    <AssociationSet Name="FK_Table_UserLog_Table_Users" Association="AccountingAndSales_DBModel.FK_Table_UserLog_Table_Users">
+      <End Role="Table_Users" EntitySet="Table_Users" />
+      <End Role="Table_UserLog" EntitySet="Table_UserLog" />
+    </AssociationSet>
+    <FunctionImport Name="sp_Update_ExitDateInUserLogTable">
+      <Parameter Name="User_ID" Mode="In" Type="Int32" />
+      <Parameter Name="ExitDate" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="View_UserLog" EntityType="AccountingAndSales_DBModel.View_UserLog" />
+    <FunctionImport Name="sp_Edit_Product">
+      <Parameter Name="Product_ID" Mode="In" Type="Int32" />
+      <Parameter Name="Product_Name" Mode="In" Type="String" />
+      <Parameter Name="Product_Description" Mode="In" Type="String" />
+      <Parameter Name="Product_Image" Mode="In" Type="Binary" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="Table_Customers">
+    <Key>
+      <PropertyRef Name="Customer_ID" />
+    </Key>
+    <Property Name="Customer_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Customer_FullName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Customer_Address" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Customer_PhoneNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_RegisterDate" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="User_ID" Type="Int32" />
+    <NavigationProperty Name="Table_Users" Relationship="AccountingAndSales_DBModel.FK_Table_Customers_Table_Users" FromRole="Table_Customers" ToRole="Table_Users" />
+    <Property Name="Customer_UpdateDate" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Table_Inventory">
+    <Key>
+      <PropertyRef Name="Inventory_ID" />
+    </Key>
+    <Property Name="Inventory_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Inventory_Count" Type="Int64" Nullable="false" />
+    <Property Name="Inventory_Date" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Inventory_Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="User_ID" Type="Int32" Nullable="false" />
+    <Property Name="Product_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Table_Product" Relationship="AccountingAndSales_DBModel.FK_Table_Inventory_Table_Product" FromRole="Table_Inventory" ToRole="Table_Product" />
+    <NavigationProperty Name="Table_Users" Relationship="AccountingAndSales_DBModel.FK_Table_Inventory_Table_Users" FromRole="Table_Inventory" ToRole="Table_Users" />
+  </EntityType>
+  <EntityType Name="Table_Product">
+    <Key>
+      <PropertyRef Name="Product_ID" />
+    </Key>
+    <Property Name="Product_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Product_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Product_Discription" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Product_LastPrice" Type="Int64" />
+    <Property Name="Product_LastInventory" Type="Int32" />
+    <Property Name="Product_Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Product_RegisterDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="User_ID" Type="Int32" />
+    <NavigationProperty Name="Table_Inventory" Relationship="AccountingAndSales_DBModel.FK_Table_Inventory_Table_Product" FromRole="Table_Product" ToRole="Table_Inventory" />
+    <NavigationProperty Name="Table_Users" Relationship="AccountingAndSales_DBModel.FK_Table_Product_Table_Users" FromRole="Table_Product" ToRole="Table_Users" />
+    <NavigationProperty Name="Table_ProductPriceManagment" Relationship="AccountingAndSales_DBModel.FK_Table_ProductPriceManagment_Table_Product" FromRole="Table_Product" ToRole="Table_ProductPriceManagment" />
+  </EntityType>
+  <EntityType Name="Table_ProductPriceManagment">
+    <Key>
+      <PropertyRef Name="ProductPiceManagment_ID" />
+    </Key>
+    <Property Name="ProductPiceManagment_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductPiceManagment_Buying" Type="Int64" Nullable="false" />
+    <Property Name="ProductPiceManagment_Selling" Type="Int64" Nullable="false" />
+    <Property Name="ProductPiceManagment_Date" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ProductPiceManagment_Dsc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Product_ID" Type="Int32" Nullable="false" />
+    <Property Name="User_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Table_Product" Relationship="AccountingAndSales_DBModel.FK_Table_ProductPriceManagment_Table_Product" FromRole="Table_ProductPriceManagment" ToRole="Table_Product" />
+    <NavigationProperty Name="Table_Users" Relationship="AccountingAndSales_DBModel.FK_Table_ProductPriceManagment_Table_Users" FromRole="Table_ProductPriceManagment" ToRole="Table_Users" />
+  </EntityType>
+  <EntityType Name="Table_Users">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="User_LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="User_Tel" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="User_Age" Type="Byte" />
+    <Property Name="User_Gender" Type="Boolean" />
+    <Property Name="User_Username" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="User_Paasword" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="User_Active" Type="Boolean" Nullable="false" />
+    <Property Name="User_StartDate" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Table_Customers" Relationship="AccountingAndSales_DBModel.FK_Table_Customers_Table_Users" FromRole="Table_Users" ToRole="Table_Customers" />
+    <NavigationProperty Name="Table_Inventory" Relationship="AccountingAndSales_DBModel.FK_Table_Inventory_Table_Users" FromRole="Table_Users" ToRole="Table_Inventory" />
+    <NavigationProperty Name="Table_Product" Relationship="AccountingAndSales_DBModel.FK_Table_Product_Table_Users" FromRole="Table_Users" ToRole="Table_Product" />
+    <NavigationProperty Name="Table_ProductPriceManagment" Relationship="AccountingAndSales_DBModel.FK_Table_ProductPriceManagment_Table_Users" FromRole="Table_Users" ToRole="Table_ProductPriceManagment" />
+    <NavigationProperty Name="Table_UserLog" Relationship="AccountingAndSales_DBModel.FK_Table_UserLog_Table_Users" FromRole="Table_Users" ToRole="Table_UserLog" />
+  </EntityType>
+  <EntityType Name="Users_View">
+    <Key>
+      <PropertyRef Name="User_ID" />
+      <PropertyRef Name="User_FirstName" />
+      <PropertyRef Name="User_LastName" />
+      <PropertyRef Name="User_Username" />
+    </Key>
+    <Property Name="User_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_FullName" Type="String" MaxLength="101" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="User_Tel" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="User_Age" Type="Byte" />
+    <Property Name="User_Gender" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="User_Active" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="User_FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="User_LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="User_Username" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="User_StartDate" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="View_Customer">
+    <Key>
+      <PropertyRef Name="Customer_ID" />
+      <PropertyRef Name="Customer_FullName" />
+      <PropertyRef Name="Customer_PhoneNumber" />
+      <PropertyRef Name="Register_User" />
+    </Key>
+    <Property Name="Customer_ID" Type="Int32" Nullable="false" />
+    <Property Name="Customer_FullName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Customer_Address" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Customer_PhoneNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Customer_RegisterDate" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Register_User" Type="String" Nullable="false" MaxLength="102" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="View_Inventory">
+    <Key>
+      <PropertyRef Name="Inventory_ID" />
+      <PropertyRef Name="Inventory_Count" />
+      <PropertyRef Name="Inventory_Date" />
+      <PropertyRef Name="User_ID" />
+      <PropertyRef Name="Product_ID" />
+      <PropertyRef Name="Register_User" />
+    </Key>
+    <Property Name="Inventory_ID" Type="Int32" Nullable="false" />
+    <Property Name="Inventory_Count" Type="Int64" Nullable="false" />
+    <Property Name="Inventory_Date" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Inventory_Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="User_ID" Type="Int32" Nullable="false" />
+    <Property Name="Product_ID" Type="Int32" Nullable="false" />
+    <Property Name="Product_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Register_User" Type="String" Nullable="false" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Name="InventoryCountStatus" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="View_Product">
+    <Key>
+      <PropertyRef Name="Product_ID" />
+      <PropertyRef Name="Product_LastPrice" />
+      <PropertyRef Name="Product_LastInventory" />
+      <PropertyRef Name="Register_User" />
+    </Key>
+    <Property Name="Product_ID" Type="Int32" Nullable="false" />
+    <Property Name="Product_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Product_LastPrice" Type="Int64" Nullable="false" />
+    <Property Name="Product_LastInventory" Type="Int32" Nullable="false" />
+    <Property Name="Product_Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Product_Discription" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Product_RegisterDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="User_ID" Type="Int32" />
+    <Property Name="Register_User" Type="String" Nullable="false" MaxLength="101" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="View_ProductPriceManagment">
+    <Key>
+      <PropertyRef Name="ProductPiceManagment_ID" />
+      <PropertyRef Name="ProductPiceManagment_Buying" />
+      <PropertyRef Name="ProductPiceManagment_Selling" />
+      <PropertyRef Name="ProductPiceManagment_Date" />
+      <PropertyRef Name="Register_User" />
+      <PropertyRef Name="Product_ID" />
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="ProductPiceManagment_ID" Type="Int32" Nullable="false" />
+    <Property Name="ProductPiceManagment_Buying" Type="Int64" Nullable="false" />
+    <Property Name="ProductPiceManagment_Selling" Type="Int64" Nullable="false" />
+    <Property Name="Product_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductPiceManagment_Date" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ProductPiceManagment_Dsc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Register_User" Type="String" Nullable="false" MaxLength="101" FixedLength="false" Unicode="true" />
+    <Property Name="Product_ID" Type="Int32" Nullable="false" />
+    <Property Name="User_ID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Table_Customers_Table_Users">
+    <End Type="AccountingAndSales_DBModel.Table_Users" Role="Table_Users" Multiplicity="0..1" />
+    <End Type="AccountingAndSales_DBModel.Table_Customers" Role="Table_Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Table_Customers">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_Inventory_Table_Product">
+    <End Type="AccountingAndSales_DBModel.Table_Product" Role="Table_Product" Multiplicity="1" />
+    <End Type="AccountingAndSales_DBModel.Table_Inventory" Role="Table_Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Product">
+        <PropertyRef Name="Product_ID" />
+      </Principal>
+      <Dependent Role="Table_Inventory">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_Inventory_Table_Users">
+    <End Type="AccountingAndSales_DBModel.Table_Users" Role="Table_Users" Multiplicity="1" />
+    <End Type="AccountingAndSales_DBModel.Table_Inventory" Role="Table_Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Table_Inventory">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_Product_Table_Users">
+    <End Type="AccountingAndSales_DBModel.Table_Users" Role="Table_Users" Multiplicity="0..1" />
+    <End Type="AccountingAndSales_DBModel.Table_Product" Role="Table_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Table_Product">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_ProductPriceManagment_Table_Product">
+    <End Type="AccountingAndSales_DBModel.Table_Product" Role="Table_Product" Multiplicity="1" />
+    <End Type="AccountingAndSales_DBModel.Table_ProductPriceManagment" Role="Table_ProductPriceManagment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Product">
+        <PropertyRef Name="Product_ID" />
+      </Principal>
+      <Dependent Role="Table_ProductPriceManagment">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_ProductPriceManagment_Table_Users">
+    <End Type="AccountingAndSales_DBModel.Table_Users" Role="Table_Users" Multiplicity="1" />
+    <End Type="AccountingAndSales_DBModel.Table_ProductPriceManagment" Role="Table_ProductPriceManagment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Table_ProductPriceManagment">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Table_UserLog">
+    <Key>
+      <PropertyRef Name="UserLog_ID" />
+    </Key>
+    <Property Name="UserLog_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_ID" Type="Int32" />
+    <Property Name="UserLog_CompuerName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="UserLog_IPAddress" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="UserLog_IPV6Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserLog_EnterDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserLog_ExitDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Table_Users" Relationship="AccountingAndSales_DBModel.FK_Table_UserLog_Table_Users" FromRole="Table_UserLog" ToRole="Table_Users" />
+  </EntityType>
+  <Association Name="FK_Table_UserLog_Table_Users">
+    <End Type="AccountingAndSales_DBModel.Table_Users" Role="Table_Users" Multiplicity="0..1" />
+    <End Type="AccountingAndSales_DBModel.Table_UserLog" Role="Table_UserLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Table_UserLog">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="View_UserLog">
+    <Key>
+      <PropertyRef Name="UserLog_ID" />
+      <PropertyRef Name="User_FirstName" />
+      <PropertyRef Name="User_LastName" />
+      <PropertyRef Name="UserFullName" />
+    </Key>
+    <Property Name="UserLog_ID" Type="Int64" Nullable="false" />
+    <Property Name="UserLog_CompuerName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="UserLog_IPAddress" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="UserLog_IPV6Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserLog_EnterDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserLog_ExitDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="User_ID" Type="Int32" />
+    <Property Name="User_FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="User_LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserFullName" Type="String" Nullable="false" MaxLength="101" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

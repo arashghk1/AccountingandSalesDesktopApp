@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AccountingAndSales_DBModelStoreContainer" CdmEntityContainer="AccountingAndSales_DBEntities">
+    <FunctionImportMapping FunctionImportName="sp_Insert_Product" FunctionName="AccountingAndSales_DBModel.Store.sp_Insert_Product" />
+    <EntitySetMapping Name="Table_Customers">
+      <EntityTypeMapping TypeName="AccountingAndSales_DBModel.Table_Customers">
+        <MappingFragment StoreEntitySet="Table_Customers">
+          <ScalarProperty Name="Customer_UpdateDate" ColumnName="Customer_UpdateDate" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Customer_RegisterDate" ColumnName="Customer_RegisterDate" />
+          <ScalarProperty Name="Customer_PhoneNumber" ColumnName="Customer_PhoneNumber" />
+          <ScalarProperty Name="Customer_Address" ColumnName="Customer_Address" />
+          <ScalarProperty Name="Customer_FullName" ColumnName="Customer_FullName" />
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table_Inventory">
+      <EntityTypeMapping TypeName="AccountingAndSales_DBModel.Table_Inventory">
+        <MappingFragment StoreEntitySet="Table_Inventory">
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Inventory_Description" ColumnName="Inventory_Description" />
+          <ScalarProperty Name="Inventory_Date" ColumnName="Inventory_Date" />
+          <ScalarProperty Name="Inventory_Count" ColumnName="Inventory_Count" />
+          <ScalarProperty Name="Inventory_ID" ColumnName="Inventory_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table_Product">
+      <EntityTypeMapping TypeName="AccountingAndSales_DBModel.Table_Product">
+        <MappingFragment StoreEntitySet="Table_Product">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Product_RegisterDate" ColumnName="Product_RegisterDate" />
+          <ScalarProperty Name="Product_Image" ColumnName="Product_Image" />
+          <ScalarProperty Name="Product_LastInventory" ColumnName="Product_LastInventory" />
+          <ScalarProperty Name="Product_LastPrice" ColumnName="Product_LastPrice" />
+          <ScalarProperty Name="Product_Discription" ColumnName="Product_Discription" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table_ProductPriceManagment">
+      <EntityTypeMapping TypeName="AccountingAndSales_DBModel.Table_ProductPriceManagment">
+        <MappingFragment StoreEntitySet="Table_ProductPriceManagment">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="ProductPiceManagment_Dsc" ColumnName="ProductPiceManagment_Dsc" />
+          <ScalarProperty Name="ProductPiceManagment_Date" ColumnName="ProductPiceManagment_Date" />
+          <ScalarProperty Name="ProductPiceManagment_Selling" ColumnName="ProductPiceManagment_Selling" />
+          <ScalarProperty Name="ProductPiceManagment_Buying" ColumnName="ProductPiceManagment_Buying" />
+          <ScalarProperty Name="ProductPiceManagment_ID" ColumnName="ProductPiceManagment_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table_Users">
+      <EntityTypeMapping TypeName="AccountingAndSales_DBModel.Table_Users">
+        <MappingFragment StoreEntitySet="Table_Users">
+          <ScalarProperty Name="User_StartDate" ColumnName="User_StartDate" />
+          <ScalarProperty Name="User_Active" ColumnName="User_Active" />
+          <ScalarProperty Name="User_Paasword" ColumnName="User_Paasword" />
+          <ScalarProperty Name="User_Username" ColumnName="User_Username" />
+          <ScalarProperty Name="User_Gender" ColumnName="User_Gender" />
+          <ScalarProperty Name="User_Age" ColumnName="User_Age" />
+          <ScalarProperty Name="User_Tel" ColumnName="User_Tel" />
+          <ScalarProperty Name="User_LastName" ColumnName="User_LastName" />
+          <ScalarProperty Name="User_FirstName" ColumnName="User_FirstName" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users_View">
+      <EntityTypeMapping TypeName="AccountingAndSales_DBModel.Users_View">
+        <MappingFragment StoreEntitySet="Users_View">
+          <ScalarProperty Name="User_StartDate" ColumnName="User_StartDate" />
+          <ScalarProperty Name="User_Username" ColumnName="User_Username" />
+          <ScalarProperty Name="User_LastName" ColumnName="User_LastName" />
+          <ScalarProperty Name="User_FirstName" ColumnName="User_FirstName" />
+          <ScalarProperty Name="User_Active" ColumnName="User Active" />
+          <ScalarProperty Name="User_Gender" ColumnName="User Gender" />
+          <ScalarProperty Name="User_Age" ColumnName="User_Age" />
+          <ScalarProperty Name="User_Tel" ColumnName="User_Tel" />
+          <ScalarProperty Name="User_FullName" ColumnName="User FullName" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_Customer">
+      <EntityTypeMapping TypeName="AccountingAndSales_DBModel.View_Customer">
+        <MappingFragment StoreEntitySet="View_Customer">
+          <ScalarProperty Name="Register_User" ColumnName="Register User" />
+          <ScalarProperty Name="Customer_RegisterDate" ColumnName="Customer_RegisterDate" />
+          <ScalarProperty Name="Customer_PhoneNumber" ColumnName="Customer_PhoneNumber" />
+          <ScalarProperty Name="Customer_Address" ColumnName="Customer_Address" />
+          <ScalarProperty Name="Customer_FullName" ColumnName="Customer_FullName" />
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_Inventory">
+      <EntityTypeMapping TypeName="AccountingAndSales_DBModel.View_Inventory">
+        <MappingFragment StoreEntitySet="View_Inventory">
+          <ScalarProperty Name="InventoryCountStatus" ColumnName="InventoryCountStatus" />
+          <ScalarProperty Name="Register_User" ColumnName="Register_User" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Inventory_Description" ColumnName="Inventory_Description" />
+          <ScalarProperty Name="Inventory_Date" ColumnName="Inventory_Date" />
+          <ScalarProperty Name="Inventory_Count" ColumnName="Inventory_Count" />
+          <ScalarProperty Name="Inventory_ID" ColumnName="Inventory_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_Product">
+      <EntityTypeMapping TypeName="AccountingAndSales_DBModel.View_Product">
+        <MappingFragment StoreEntitySet="View_Product">
+          <ScalarProperty Name="Register_User" ColumnName="Register_User" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Product_RegisterDate" ColumnName="Product_RegisterDate" />
+          <ScalarProperty Name="Product_Discription" ColumnName="Product_Discription" />
+          <ScalarProperty Name="Product_Image" ColumnName="Product_Image" />
+          <ScalarProperty Name="Product_LastInventory" ColumnName="Product_LastInventory" />
+          <ScalarProperty Name="Product_LastPrice" ColumnName="Product_LastPrice" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_ProductPriceManagment">
+      <EntityTypeMapping TypeName="AccountingAndSales_DBModel.View_ProductPriceManagment">
+        <MappingFragment StoreEntitySet="View_ProductPriceManagment">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Register_User" ColumnName="Register User" />
+          <ScalarProperty Name="ProductPiceManagment_Dsc" ColumnName="ProductPiceManagment_Dsc" />
+          <ScalarProperty Name="ProductPiceManagment_Date" ColumnName="ProductPiceManagment_Date" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="ProductPiceManagment_Selling" ColumnName="ProductPiceManagment_Selling" />
+          <ScalarProperty Name="ProductPiceManagment_Buying" ColumnName="ProductPiceManagment_Buying" />
+          <ScalarProperty Name="ProductPiceManagment_ID" ColumnName="ProductPiceManagment_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_UpdateLastPrice_Product" FunctionName="AccountingAndSales_DBModel.Store.sp_UpdateLastPrice_Product" />
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="AccountingAndSales_DBModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="AccountingAndSales_DBModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="AccountingAndSales_DBModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="AccountingAndSales_DBModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AccountingAndSales_DBModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="AccountingAndSales_DBModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AccountingAndSales_DBModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="AccountingAndSales_DBModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_Update_ProductLastQuantity" FunctionName="AccountingAndSales_DBModel.Store.sp_Update_ProductLastQuantity" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="AccountingAndSales_DBModel.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="AccountingAndSales_DBModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table_UserLog">
+      <EntityTypeMapping TypeName="AccountingAndSales_DBModel.Table_UserLog">
+        <MappingFragment StoreEntitySet="Table_UserLog">
+          <ScalarProperty Name="UserLog_ExitDate" ColumnName="UserLog_ExitDate" />
+          <ScalarProperty Name="UserLog_EnterDate" ColumnName="UserLog_EnterDate" />
+          <ScalarProperty Name="UserLog_IPV6Address" ColumnName="UserLog_IPV6Address" />
+          <ScalarProperty Name="UserLog_IPAddress" ColumnName="UserLog_IPAddress" />
+          <ScalarProperty Name="UserLog_CompuerName" ColumnName="UserLog_CompuerName" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="UserLog_ID" ColumnName="UserLog_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_Update_ExitDateInUserLogTable" FunctionName="AccountingAndSales_DBModel.Store.sp_Update_ExitDateInUserLogTable" />
+    <EntitySetMapping Name="View_UserLog">
+      <EntityTypeMapping TypeName="AccountingAndSales_DBModel.View_UserLog">
+        <MappingFragment StoreEntitySet="View_UserLog">
+          <ScalarProperty Name="UserFullName" ColumnName="UserFullName" />
+          <ScalarProperty Name="User_LastName" ColumnName="User_LastName" />
+          <ScalarProperty Name="User_FirstName" ColumnName="User_FirstName" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="UserLog_ExitDate" ColumnName="UserLog_ExitDate" />
+          <ScalarProperty Name="UserLog_EnterDate" ColumnName="UserLog_EnterDate" />
+          <ScalarProperty Name="UserLog_IPV6Address" ColumnName="UserLog_IPV6Address" />
+          <ScalarProperty Name="UserLog_IPAddress" ColumnName="UserLog_IPAddress" />
+          <ScalarProperty Name="UserLog_CompuerName" ColumnName="UserLog_CompuerName" />
+          <ScalarProperty Name="UserLog_ID" ColumnName="UserLog_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_Edit_Product" FunctionName="AccountingAndSales_DBModel.Store.sp_Edit_Product" />
+  </EntityContainerMapping>
+</Mapping>

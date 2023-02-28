@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AccountingAndSales_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Table_Customers">
+    <Key>
+      <PropertyRef Name="Customer_ID" />
+    </Key>
+    <Property Name="Customer_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Customer_FullName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Customer_Address" Type="nvarchar" MaxLength="250" />
+    <Property Name="Customer_PhoneNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Customer_RegisterDate" Type="nvarchar" MaxLength="30" />
+    <Property Name="User_ID" Type="int" />
+    <Property Name="Customer_Delete" Type="bit" />
+  </EntityType>
+  <EntityType Name="Table_DataHistory">
+    <Key>
+      <PropertyRef Name="DataHistory_ID" />
+    </Key>
+    <Property Name="DataHistory_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DataHistory_TableName" Type="varchar" MaxLength="50" />
+    <Property Name="DataHistory_WhatID" Type="int" />
+    <Property Name="DataHistory_ActionType" Type="varchar" MaxLength="50" />
+    <Property Name="DataHistory_ModifyDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Table_Inventory">
+    <Key>
+      <PropertyRef Name="Inventory_ID" />
+    </Key>
+    <Property Name="Inventory_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Inventory_Count" Type="bigint" Nullable="false" />
+    <Property Name="Inventory_Date" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Inventory_Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="User_ID" Type="int" Nullable="false" />
+    <Property Name="Product_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Table_Invoice">
+    <Key>
+      <PropertyRef Name="Invoice_ID" />
+    </Key>
+    <Property Name="Invoice_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Invoice_DateTime" Type="varchar" MaxLength="50" />
+    <Property Name="Invoice_Price" Type="bigint" />
+    <Property Name="Invoice_BuyingPrice" Type="bigint" />
+    <Property Name="Invoice_Description" Type="text" />
+    <Property Name="Invoice_Type" Type="bit" />
+    <Property Name="Customer_ID" Type="int" />
+    <Property Name="User_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="Table_InvoiceProduct">
+    <Key>
+      <PropertyRef Name="InvoiceProduct_ID" />
+    </Key>
+    <Property Name="InvoiceProduct_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InvoiceProduct_Count" Type="int" />
+    <Property Name="Product_ID" Type="int" />
+    <Property Name="InvoiceProduct_SellingPrice" Type="bigint" />
+    <Property Name="InvoiceProduct_BuyingPrice" Type="bigint" />
+    <Property Name="Invoice_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="Table_Product">
+    <Key>
+      <PropertyRef Name="Product_ID" />
+    </Key>
+    <Property Name="Product_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Product_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Product_Discription" Type="varchar" MaxLength="250" />
+    <Property Name="Product_LastPrice" Type="bigint" />
+    <Property Name="Product_LastBuyingPrice" Type="bigint" />
+    <Property Name="Product_LastInventory" Type="int" />
+    <Property Name="Product_Image" Type="image" />
+    <Property Name="Product_RegisterDate" Type="varchar" MaxLength="50" />
+    <Property Name="User_ID" Type="int" />
+    <Property Name="Product_Delete" Type="bit" />
+  </EntityType>
+  <EntityType Name="Table_ProductPriceManagment">
+    <Key>
+      <PropertyRef Name="ProductPiceManagment_ID" />
+    </Key>
+    <Property Name="ProductPiceManagment_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductPiceManagment_Buying" Type="bigint" Nullable="false" />
+    <Property Name="ProductPiceManagment_Selling" Type="bigint" Nullable="false" />
+    <Property Name="ProductPiceManagment_Date" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ProductPiceManagment_Dsc" Type="nvarchar" MaxLength="250" />
+    <Property Name="Product_ID" Type="int" Nullable="false" />
+    <Property Name="User_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Table_UserLog">
+    <Key>
+      <PropertyRef Name="UserLog_ID" />
+    </Key>
+    <Property Name="UserLog_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User_ID" Type="int" />
+    <Property Name="UserLog_CompuerName" Type="varchar" MaxLength="150" />
+    <Property Name="UserLog_IPAddress" Type="varchar" MaxLength="30" />
+    <Property Name="UserLog_IPV6Address" Type="varchar" MaxLength="50" />
+    <Property Name="UserLog_EnterDate" Type="varchar" MaxLength="50" />
+    <Property Name="UserLog_ExitDate" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Table_Users">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User_FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_Tel" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="User_Age" Type="tinyint" />
+    <Property Name="User_Gender" Type="bit" />
+    <Property Name="User_Username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_Paasword" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="User_Active" Type="bit" Nullable="false" />
+    <Property Name="User_StartDate" Type="varchar" MaxLength="20" />
+    <Property Name="User_Delete" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AccountingAndSales_DB.dbo.Users_View' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Users_View">
+    <Key>
+      <PropertyRef Name="User_ID" />
+      <PropertyRef Name="User FullName" />
+      <PropertyRef Name="User_Tel" />
+      <PropertyRef Name="User_FirstName" />
+      <PropertyRef Name="User_LastName" />
+      <PropertyRef Name="User_Username" />
+    </Key>
+    <Property Name="User_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User FullName" Type="nvarchar" MaxLength="101" Nullable="false" />
+    <Property Name="User_Tel" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="User_Age" Type="tinyint" />
+    <Property Name="User Gender" Type="varchar" MaxLength="6" />
+    <Property Name="User Active" Type="varchar" MaxLength="8" />
+    <Property Name="User_FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_Username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_StartDate" Type="varchar" MaxLength="20" />
+    <Property Name="User_Delete" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AccountingAndSales_DB.dbo.View_Customer' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_Customer">
+    <Key>
+      <PropertyRef Name="Customer_ID" />
+      <PropertyRef Name="Customer_FullName" />
+      <PropertyRef Name="Customer_PhoneNumber" />
+      <PropertyRef Name="Register User" />
+    </Key>
+    <Property Name="Customer_ID" Type="int" Nullable="false" />
+    <Property Name="Customer_FullName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Customer_Address" Type="nvarchar" MaxLength="250" />
+    <Property Name="Customer_PhoneNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Customer_RegisterDate" Type="nvarchar" MaxLength="30" />
+    <Property Name="Register User" Type="nvarchar" MaxLength="102" Nullable="false" />
+    <Property Name="Customer_Delete" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AccountingAndSales_DB.dbo.View_Inventory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_Inventory">
+    <Key>
+      <PropertyRef Name="Inventory_ID" />
+      <PropertyRef Name="Inventory_Count" />
+      <PropertyRef Name="Inventory_Date" />
+      <PropertyRef Name="User_ID" />
+      <PropertyRef Name="Product_ID" />
+      <PropertyRef Name="Register_User" />
+    </Key>
+    <Property Name="Inventory_ID" Type="int" Nullable="false" />
+    <Property Name="Inventory_Count" Type="bigint" Nullable="false" />
+    <Property Name="Inventory_Date" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Inventory_Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="User_ID" Type="int" Nullable="false" />
+    <Property Name="Product_ID" Type="int" Nullable="false" />
+    <Property Name="Product_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Register_User" Type="nvarchar" MaxLength="101" Nullable="false" />
+    <Property Name="InventoryCountStatus" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AccountingAndSales_DB.dbo.View_Invoice' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_Invoice">
+    <Key>
+      <PropertyRef Name="Invoice_ID" />
+      <PropertyRef Name="Customer_FullName" />
+      <PropertyRef Name="Customer_PhoneNumber" />
+      <PropertyRef Name="User_FirstName" />
+      <PropertyRef Name="User_LastName" />
+      <PropertyRef Name="UserRegister" />
+    </Key>
+    <Property Name="Invoice_ID" Type="int" Nullable="false" />
+    <Property Name="Invoice_DateTime" Type="varchar" MaxLength="50" />
+    <Property Name="Invoice_Price" Type="bigint" />
+    <Property Name="Invoice_BuyingPrice" Type="bigint" />
+    <Property Name="Invoice_Description" Type="text" />
+    <Property Name="Customer_ID" Type="int" />
+    <Property Name="User_ID" Type="int" />
+    <Property Name="Customer_FullName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Customer_Address" Type="nvarchar" MaxLength="250" />
+    <Property Name="Customer_PhoneNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserRegister" Type="nvarchar" MaxLength="101" Nullable="false" />
+    <Property Name="Invoice_Type" Type="bit" />
+    <Property Name="InvoiceTypeEnglish" Type="varchar" MaxLength="14" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AccountingAndSales_DB.dbo.View_InvoiceProduct' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_InvoiceProduct">
+    <Key>
+      <PropertyRef Name="InvoiceProduct_ID" />
+    </Key>
+    <Property Name="InvoiceProduct_ID" Type="int" Nullable="false" />
+    <Property Name="InvoiceProduct_Count" Type="int" />
+    <Property Name="Product_ID" Type="int" />
+    <Property Name="InvoiceProduct_SellingPrice" Type="bigint" />
+    <Property Name="InvoiceProduct_BuyingPrice" Type="bigint" />
+    <Property Name="Invoice_ID" Type="int" />
+    <Property Name="Product_Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AccountingAndSales_DB.dbo.View_Product' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_Product">
+    <Key>
+      <PropertyRef Name="Product_ID" />
+      <PropertyRef Name="Register_User" />
+      <PropertyRef Name="User_FirstName" />
+      <PropertyRef Name="User_LastName" />
+    </Key>
+    <Property Name="Product_ID" Type="int" Nullable="false" />
+    <Property Name="Product_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Product_LastPrice" Type="bigint" />
+    <Property Name="Product_LastBuyingPrice" Type="bigint" />
+    <Property Name="Product_LastInventory" Type="int" />
+    <Property Name="Product_Image" Type="image" />
+    <Property Name="Product_Discription" Type="varchar" MaxLength="250" />
+    <Property Name="Product_RegisterDate" Type="varchar" MaxLength="50" />
+    <Property Name="User_ID" Type="int" />
+    <Property Name="Register_User" Type="nvarchar" MaxLength="101" Nullable="false" />
+    <Property Name="User_FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Product_Delete" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AccountingAndSales_DB.dbo.View_ProductPriceManagment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_ProductPriceManagment">
+    <Key>
+      <PropertyRef Name="ProductPiceManagment_ID" />
+      <PropertyRef Name="ProductPiceManagment_Buying" />
+      <PropertyRef Name="ProductPiceManagment_Selling" />
+      <PropertyRef Name="ProductPiceManagment_Date" />
+      <PropertyRef Name="Register User" />
+      <PropertyRef Name="Product_ID" />
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="ProductPiceManagment_ID" Type="int" Nullable="false" />
+    <Property Name="ProductPiceManagment_Buying" Type="bigint" Nullable="false" />
+    <Property Name="ProductPiceManagment_Selling" Type="bigint" Nullable="false" />
+    <Property Name="Product_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductPiceManagment_Date" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ProductPiceManagment_Dsc" Type="nvarchar" MaxLength="250" />
+    <Property Name="Register User" Type="nvarchar" MaxLength="101" Nullable="false" />
+    <Property Name="Product_ID" Type="int" Nullable="false" />
+    <Property Name="User_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AccountingAndSales_DB.dbo.View_UserLog' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_UserLog">
+    <Key>
+      <PropertyRef Name="UserLog_ID" />
+      <PropertyRef Name="User_FirstName" />
+      <PropertyRef Name="User_LastName" />
+      <PropertyRef Name="UserFullName" />
+    </Key>
+    <Property Name="UserLog_ID" Type="bigint" Nullable="false" />
+    <Property Name="UserLog_CompuerName" Type="varchar" MaxLength="150" />
+    <Property Name="UserLog_IPAddress" Type="varchar" MaxLength="30" />
+    <Property Name="UserLog_IPV6Address" Type="varchar" MaxLength="50" />
+    <Property Name="UserLog_EnterDate" Type="varchar" MaxLength="50" />
+    <Property Name="UserLog_ExitDate" Type="varchar" MaxLength="50" />
+    <Property Name="User_ID" Type="int" />
+    <Property Name="User_FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserFullName" Type="nvarchar" MaxLength="101" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Table_Customers_Table_Users">
+    <End Role="Table_Users" Type="Self.Table_Users" Multiplicity="0..1" />
+    <End Role="Table_Customers" Type="Self.Table_Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Table_Customers">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_Inventory_Table_Product">
+    <End Role="Table_Product" Type="Self.Table_Product" Multiplicity="1" />
+    <End Role="Table_Inventory" Type="Self.Table_Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Product">
+        <PropertyRef Name="Product_ID" />
+      </Principal>
+      <Dependent Role="Table_Inventory">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_Inventory_Table_Users">
+    <End Role="Table_Users" Type="Self.Table_Users" Multiplicity="1" />
+    <End Role="Table_Inventory" Type="Self.Table_Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Table_Inventory">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_Invoice_Table_Customers">
+    <End Role="Table_Customers" Type="Self.Table_Customers" Multiplicity="0..1" />
+    <End Role="Table_Invoice" Type="Self.Table_Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Customers">
+        <PropertyRef Name="Customer_ID" />
+      </Principal>
+      <Dependent Role="Table_Invoice">
+        <PropertyRef Name="Customer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_Invoice_Table_Users">
+    <End Role="Table_Users" Type="Self.Table_Users" Multiplicity="0..1" />
+    <End Role="Table_Invoice" Type="Self.Table_Invoice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Table_Invoice">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_InvoiceProduct_Table_Invoice">
+    <End Role="Table_Invoice" Type="Self.Table_Invoice" Multiplicity="0..1" />
+    <End Role="Table_InvoiceProduct" Type="Self.Table_InvoiceProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Invoice">
+        <PropertyRef Name="Invoice_ID" />
+      </Principal>
+      <Dependent Role="Table_InvoiceProduct">
+        <PropertyRef Name="Invoice_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_InvoiceProduct_Table_Product">
+    <End Role="Table_Product" Type="Self.Table_Product" Multiplicity="0..1" />
+    <End Role="Table_InvoiceProduct" Type="Self.Table_InvoiceProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Product">
+        <PropertyRef Name="Product_ID" />
+      </Principal>
+      <Dependent Role="Table_InvoiceProduct">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_Product_Table_Users">
+    <End Role="Table_Users" Type="Self.Table_Users" Multiplicity="0..1" />
+    <End Role="Table_Product" Type="Self.Table_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Table_Product">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_ProductPriceManagment_Table_Product">
+    <End Role="Table_Product" Type="Self.Table_Product" Multiplicity="1" />
+    <End Role="Table_ProductPriceManagment" Type="Self.Table_ProductPriceManagment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Product">
+        <PropertyRef Name="Product_ID" />
+      </Principal>
+      <Dependent Role="Table_ProductPriceManagment">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_ProductPriceManagment_Table_Users">
+    <End Role="Table_Users" Type="Self.Table_Users" Multiplicity="1" />
+    <End Role="Table_ProductPriceManagment" Type="Self.Table_ProductPriceManagment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Table_ProductPriceManagment">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_UserLog_Table_Users">
+    <End Role="Table_Users" Type="Self.Table_Users" Multiplicity="0..1" />
+    <End Role="Table_UserLog" Type="Self.Table_UserLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Table_Users">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="Table_UserLog">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_Edit_Product" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Product_ID" Type="int" Mode="In" />
+    <Parameter Name="Product_Name" Type="varchar" Mode="In" />
+    <Parameter Name="Product_Description" Type="varchar" Mode="In" />
+    <Parameter Name="Product_Image" Type="image" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_Insert_Product" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Product_Name" Type="varchar" Mode="In" />
+    <Parameter Name="Product_Description" Type="varchar" Mode="In" />
+    <Parameter Name="Product_Image" Type="image" Mode="In" />
+    <Parameter Name="Product_RegisterDate" Type="varchar" Mode="In" />
+    <Parameter Name="User_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_NewUpdate_Product_forNotImage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Product_ID" Type="int" Mode="In" />
+    <Parameter Name="Product_Name" Type="varchar" Mode="In" />
+    <Parameter Name="Product_Description" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_Update_ExitDateInUserLogTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="User_ID" Type="int" Mode="In" />
+    <Parameter Name="ExitDate" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_Update_ProductLastQuantity" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Inverntory_Count" Type="bigint" Mode="In" />
+    <Parameter Name="Product_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_UpdateLastPrice_Product" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Product_ID" Type="int" Mode="In" />
+    <Parameter Name="Product_LastPrice" Type="bigint" Mode="In" />
+    <Parameter Name="Product_LastBuyingPrice" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="AccountingAndSales_DBModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table_Customers" EntityType="Self.Table_Customers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table_DataHistory" EntityType="Self.Table_DataHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table_Inventory" EntityType="Self.Table_Inventory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table_Invoice" EntityType="Self.Table_Invoice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table_InvoiceProduct" EntityType="Self.Table_InvoiceProduct" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table_Product" EntityType="Self.Table_Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table_ProductPriceManagment" EntityType="Self.Table_ProductPriceManagment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table_UserLog" EntityType="Self.Table_UserLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table_Users" EntityType="Self.Table_Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users_View" EntityType="Self.Users_View" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Users_View].[User_ID] AS [User_ID], 
+    [Users_View].[User FullName] AS [User FullName], 
+    [Users_View].[User_Tel] AS [User_Tel], 
+    [Users_View].[User_Age] AS [User_Age], 
+    [Users_View].[User Gender] AS [User Gender], 
+    [Users_View].[User Active] AS [User Active], 
+    [Users_View].[User_FirstName] AS [User_FirstName], 
+    [Users_View].[User_LastName] AS [User_LastName], 
+    [Users_View].[User_Username] AS [User_Username], 
+    [Users_View].[User_StartDate] AS [User_StartDate], 
+    [Users_View].[User_Delete] AS [User_Delete]
+    FROM [dbo].[Users_View] AS [Users_View]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_Customer" EntityType="Self.View_Customer" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_Customer].[Customer_ID] AS [Customer_ID], 
+    [View_Customer].[Customer_FullName] AS [Customer_FullName], 
+    [View_Customer].[Customer_Address] AS [Customer_Address], 
+    [View_Customer].[Customer_PhoneNumber] AS [Customer_PhoneNumber], 
+    [View_Customer].[Customer_RegisterDate] AS [Customer_RegisterDate], 
+    [View_Customer].[Register User] AS [Register User], 
+    [View_Customer].[Customer_Delete] AS [Customer_Delete]
+    FROM [dbo].[View_Customer] AS [View_Customer]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_Inventory" EntityType="Self.View_Inventory" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_Inventory].[Inventory_ID] AS [Inventory_ID], 
+    [View_Inventory].[Inventory_Count] AS [Inventory_Count], 
+    [View_Inventory].[Inventory_Date] AS [Inventory_Date], 
+    [View_Inventory].[Inventory_Description] AS [Inventory_Description], 
+    [View_Inventory].[User_ID] AS [User_ID], 
+    [View_Inventory].[Product_ID] AS [Product_ID], 
+    [View_Inventory].[Product_Name] AS [Product_Name], 
+    [View_Inventory].[Register_User] AS [Register_User], 
+    [View_Inventory].[InventoryCountStatus] AS [InventoryCountStatus]
+    FROM [dbo].[View_Inventory] AS [View_Inventory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_Invoice" EntityType="Self.View_Invoice" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_Invoice].[Invoice_ID] AS [Invoice_ID], 
+    [View_Invoice].[Invoice_DateTime] AS [Invoice_DateTime], 
+    [View_Invoice].[Invoice_Price] AS [Invoice_Price], 
+    [View_Invoice].[Invoice_BuyingPrice] AS [Invoice_BuyingPrice], 
+    [View_Invoice].[Invoice_Description] AS [Invoice_Description], 
+    [View_Invoice].[Customer_ID] AS [Customer_ID], 
+    [View_Invoice].[User_ID] AS [User_ID], 
+    [View_Invoice].[Customer_FullName] AS [Customer_FullName], 
+    [View_Invoice].[Customer_Address] AS [Customer_Address], 
+    [View_Invoice].[Customer_PhoneNumber] AS [Customer_PhoneNumber], 
+    [View_Invoice].[User_FirstName] AS [User_FirstName], 
+    [View_Invoice].[User_LastName] AS [User_LastName], 
+    [View_Invoice].[UserRegister] AS [UserRegister], 
+    [View_Invoice].[Invoice_Type] AS [Invoice_Type], 
+    [View_Invoice].[InvoiceTypeEnglish] AS [InvoiceTypeEnglish]
+    FROM [dbo].[View_Invoice] AS [View_Invoice]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_InvoiceProduct" EntityType="Self.View_InvoiceProduct" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_InvoiceProduct].[InvoiceProduct_ID] AS [InvoiceProduct_ID], 
+    [View_InvoiceProduct].[InvoiceProduct_Count] AS [InvoiceProduct_Count], 
+    [View_InvoiceProduct].[Product_ID] AS [Product_ID], 
+    [View_InvoiceProduct].[InvoiceProduct_SellingPrice] AS [InvoiceProduct_SellingPrice], 
+    [View_InvoiceProduct].[InvoiceProduct_BuyingPrice] AS [InvoiceProduct_BuyingPrice], 
+    [View_InvoiceProduct].[Invoice_ID] AS [Invoice_ID], 
+    [View_InvoiceProduct].[Product_Name] AS [Product_Name]
+    FROM [dbo].[View_InvoiceProduct] AS [View_InvoiceProduct]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_Product" EntityType="Self.View_Product" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_Product].[Product_ID] AS [Product_ID], 
+    [View_Product].[Product_Name] AS [Product_Name], 
+    [View_Product].[Product_LastPrice] AS [Product_LastPrice], 
+    [View_Product].[Product_LastBuyingPrice] AS [Product_LastBuyingPrice], 
+    [View_Product].[Product_LastInventory] AS [Product_LastInventory], 
+    [View_Product].[Product_Image] AS [Product_Image], 
+    [View_Product].[Product_Discription] AS [Product_Discription], 
+    [View_Product].[Product_RegisterDate] AS [Product_RegisterDate], 
+    [View_Product].[User_ID] AS [User_ID], 
+    [View_Product].[Register_User] AS [Register_User], 
+    [View_Product].[User_FirstName] AS [User_FirstName], 
+    [View_Product].[User_LastName] AS [User_LastName], 
+    [View_Product].[Product_Delete] AS [Product_Delete]
+    FROM [dbo].[View_Product] AS [View_Product]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_ProductPriceManagment" EntityType="Self.View_ProductPriceManagment" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_ProductPriceManagment].[ProductPiceManagment_ID] AS [ProductPiceManagment_ID], 
+    [View_ProductPriceManagment].[ProductPiceManagment_Buying] AS [ProductPiceManagment_Buying], 
+    [View_ProductPriceManagment].[ProductPiceManagment_Selling] AS [ProductPiceManagment_Selling], 
+    [View_ProductPriceManagment].[Product_Name] AS [Product_Name], 
+    [View_ProductPriceManagment].[ProductPiceManagment_Date] AS [ProductPiceManagment_Date], 
+    [View_ProductPriceManagment].[ProductPiceManagment_Dsc] AS [ProductPiceManagment_Dsc], 
+    [View_ProductPriceManagment].[Register User] AS [Register User], 
+    [View_ProductPriceManagment].[Product_ID] AS [Product_ID], 
+    [View_ProductPriceManagment].[User_ID] AS [User_ID]
+    FROM [dbo].[View_ProductPriceManagment] AS [View_ProductPriceManagment]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="View_UserLog" EntityType="Self.View_UserLog" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_UserLog].[UserLog_ID] AS [UserLog_ID], 
+    [View_UserLog].[UserLog_CompuerName] AS [UserLog_CompuerName], 
+    [View_UserLog].[UserLog_IPAddress] AS [UserLog_IPAddress], 
+    [View_UserLog].[UserLog_IPV6Address] AS [UserLog_IPV6Address], 
+    [View_UserLog].[UserLog_EnterDate] AS [UserLog_EnterDate], 
+    [View_UserLog].[UserLog_ExitDate] AS [UserLog_ExitDate], 
+    [View_UserLog].[User_ID] AS [User_ID], 
+    [View_UserLog].[User_FirstName] AS [User_FirstName], 
+    [View_UserLog].[User_LastName] AS [User_LastName], 
+    [View_UserLog].[UserFullName] AS [UserFullName]
+    FROM [dbo].[View_UserLog] AS [View_UserLog]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Table_Customers_Table_Users" Association="Self.FK_Table_Customers_Table_Users">
+      <End Role="Table_Users" EntitySet="Table_Users" />
+      <End Role="Table_Customers" EntitySet="Table_Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_Inventory_Table_Product" Association="Self.FK_Table_Inventory_Table_Product">
+      <End Role="Table_Product" EntitySet="Table_Product" />
+      <End Role="Table_Inventory" EntitySet="Table_Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_Inventory_Table_Users" Association="Self.FK_Table_Inventory_Table_Users">
+      <End Role="Table_Users" EntitySet="Table_Users" />
+      <End Role="Table_Inventory" EntitySet="Table_Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_Invoice_Table_Customers" Association="Self.FK_Table_Invoice_Table_Customers">
+      <End Role="Table_Customers" EntitySet="Table_Customers" />
+      <End Role="Table_Invoice" EntitySet="Table_Invoice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_Invoice_Table_Users" Association="Self.FK_Table_Invoice_Table_Users">
+      <End Role="Table_Users" EntitySet="Table_Users" />
+      <End Role="Table_Invoice" EntitySet="Table_Invoice" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_InvoiceProduct_Table_Invoice" Association="Self.FK_Table_InvoiceProduct_Table_Invoice">
+      <End Role="Table_Invoice" EntitySet="Table_Invoice" />
+      <End Role="Table_InvoiceProduct" EntitySet="Table_InvoiceProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_InvoiceProduct_Table_Product" Association="Self.FK_Table_InvoiceProduct_Table_Product">
+      <End Role="Table_Product" EntitySet="Table_Product" />
+      <End Role="Table_InvoiceProduct" EntitySet="Table_InvoiceProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_Product_Table_Users" Association="Self.FK_Table_Product_Table_Users">
+      <End Role="Table_Users" EntitySet="Table_Users" />
+      <End Role="Table_Product" EntitySet="Table_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_ProductPriceManagment_Table_Product" Association="Self.FK_Table_ProductPriceManagment_Table_Product">
+      <End Role="Table_Product" EntitySet="Table_Product" />
+      <End Role="Table_ProductPriceManagment" EntitySet="Table_ProductPriceManagment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_ProductPriceManagment_Table_Users" Association="Self.FK_Table_ProductPriceManagment_Table_Users">
+      <End Role="Table_Users" EntitySet="Table_Users" />
+      <End Role="Table_ProductPriceManagment" EntitySet="Table_ProductPriceManagment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_UserLog_Table_Users" Association="Self.FK_Table_UserLog_Table_Users">
+      <End Role="Table_Users" EntitySet="Table_Users" />
+      <End Role="Table_UserLog" EntitySet="Table_UserLog" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

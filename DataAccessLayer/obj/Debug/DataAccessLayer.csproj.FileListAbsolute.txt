@@ -1,0 +1,41 @@
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\BussinesEntity.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\BussinesEntity.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\BussinesEntity.dll.config
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\BussinesEntity.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\BussinesEntity.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\BussinesEntity.dll.config
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\BussinesEntity.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\BussinesEntity.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\DataAccessLayer\bin\Debug\BussinesEntity.dll.config
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

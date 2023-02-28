@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ad6cbff828324290ae309f614b848a22" Name="Diagram1" ZoomLevel="47">
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.Table_Customers" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.Table_DataHistory" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.Table_Inventory" Width="1.5" PointX="5.25" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.Table_Invoice" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.Table_InvoiceProduct" Width="1.5" PointX="7.5" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.Table_Product" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.Table_ProductPriceManagment" Width="1.5" PointX="8.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.Table_UserLog" Width="1.5" PointX="3" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.Table_Users" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.Users_View" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.View_Customer" Width="1.5" PointX="9.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.View_Inventory" Width="1.5" PointX="10.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.View_Invoice" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.View_InvoiceProduct" Width="1.5" PointX="12.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.View_Product" Width="1.5" PointX="7.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.View_ProductPriceManagment" Width="1.5" PointX="12.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AccountingAndSales_DBModel.View_UserLog" Width="1.5" PointX="9.75" PointY="12.75" IsExpanded="true" />
+        <AssociationConnector Association="AccountingAndSales_DBModel.FK_Table_Customers_Table_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingAndSales_DBModel.FK_Table_Invoice_Table_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingAndSales_DBModel.FK_Table_Inventory_Table_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingAndSales_DBModel.FK_Table_Inventory_Table_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingAndSales_DBModel.FK_Table_Invoice_Table_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingAndSales_DBModel.FK_Table_InvoiceProduct_Table_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingAndSales_DBModel.FK_Table_InvoiceProduct_Table_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingAndSales_DBModel.FK_Table_Product_Table_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingAndSales_DBModel.FK_Table_ProductPriceManagment_Table_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingAndSales_DBModel.FK_Table_ProductPriceManagment_Table_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="AccountingAndSales_DBModel.FK_Table_UserLog_Table_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

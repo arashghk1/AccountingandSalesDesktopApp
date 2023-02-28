@@ -1,0 +1,47 @@
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesEntity\bin\Debug\BussinesEntity.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesEntity\bin\Debug\BussinesEntity.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesEntity\obj\Debug\BussinesEntity.csproj.CoreCompileInputs.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesEntity\obj\Debug\BussinesEntity.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesEntity\obj\Debug\BussinesEntity.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesEntity\obj\Debug\BussinesEntity.csproj.AssemblyReference.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesEntity\bin\Debug\BussinesEntity.dll.config
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesEntity\bin\Debug\EntityFramework.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesEntity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesEntity\bin\Debug\EntityFramework.xml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesEntity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesEntity\obj\Debug\BussinesEntity.csproj.CopyComplete
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\BussinesEntity.dll.config
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\BussinesEntity.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\BussinesEntity.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\EntityFramework.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\EntityFramework.xml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesEntity\obj\Debug\BussinesEntity.csproj.AssemblyReference.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesEntity\obj\Debug\BussinesEntity.csproj.CoreCompileInputs.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesEntity\obj\Debug\BussinesEntity.csproj.CopyComplete
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesEntity\obj\Debug\BussinesEntity.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesEntity\obj\Debug\BussinesEntity.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\BussinesEntity.dll.config
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\BussinesEntity.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\BussinesEntity.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\EntityFramework.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\EntityFramework.SqlServer.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\EntityFramework.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\EntityFramework.SqlServer.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesEntity\obj\Debug\BussinesEntity.csproj.CoreCompileInputs.cache
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesEntity\obj\Debug\BussinesEntity.csproj.CopyComplete
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesEntity\obj\Debug\BussinesEntity.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesEntity\obj\Debug\BussinesEntity.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\BussinesEntity.dll.config
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\BussinesEntity.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\BussinesEntity.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\EntityFramework.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\EntityFramework.SqlServer.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\EntityFramework.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesEntity\bin\Debug\EntityFramework.SqlServer.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesEntity\obj\Debug\BussinesEntity.csproj.AssemblyReference.cache
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesEntity\obj\Debug\BussinesEntity.csproj.CoreCompileInputs.cache
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesEntity\obj\Debug\BussinesEntity.csproj.CopyComplete
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesEntity\obj\Debug\BussinesEntity.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesEntity\obj\Debug\BussinesEntity.pdb

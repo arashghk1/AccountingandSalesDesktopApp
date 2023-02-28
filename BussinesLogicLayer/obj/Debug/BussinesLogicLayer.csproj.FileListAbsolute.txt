@@ -1,0 +1,48 @@
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesLogicLayer\bin\Debug\BussinesLogicLayer.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesLogicLayer\bin\Debug\BussinesLogicLayer.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSales\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.csproj.AssemblyReference.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\BussinesLogicLayer.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\BussinesLogicLayer.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\BussinesEntity.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\EntityFramework.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\BussinesEntity.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\BussinesEntity.dll.config
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\EntityFramework.xml
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.csproj.AssemblyReference.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.csproj.CopyComplete
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.dll
+C:\Users\SaeeD_PC\source\repos\AccountingAndSalesOlderWithArash\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\BussinesLogicLayer.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\BussinesLogicLayer.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\BussinesEntity.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\DataAccessLayer.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\EntityFramework.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\BussinesEntity.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\BussinesEntity.dll.config
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\DataAccessLayer.pdb
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\EntityFramework.xml
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.csproj.AssemblyReference.cache
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.csproj.CoreCompileInputs.cache
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.csproj.CopyComplete
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.dll
+D:\SaeeD Master TovseGar\Project\AccountingAndSalesOlderWithArash\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\BussinesLogicLayer.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\BussinesLogicLayer.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\BussinesEntity.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\DataAccessLayer.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\EntityFramework.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\BussinesEntity.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\BussinesEntity.dll.config
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\DataAccessLayer.pdb
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesLogicLayer\bin\Debug\EntityFramework.xml
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.csproj.AssemblyReference.cache
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.csproj.CoreCompileInputs.cache
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.csproj.CopyComplete
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.dll
+F:\Programming\C# Visual Studio Projects\AccountingAndSalesOlderWithArash\BussinesLogicLayer\obj\Debug\BussinesLogicLayer.pdb

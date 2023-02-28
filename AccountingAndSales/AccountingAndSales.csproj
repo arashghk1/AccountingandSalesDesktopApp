@@ -1,0 +1,722 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9E98567-23D8-4544-8BD7-DA5FF2A4C01F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AccountingAndSales</RootNamespace>
+    <AssemblyName>AccountingAndSales</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AccountingAndSales.App</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataVisualization.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Mvvm.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Charts.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Charts.v22.2.resources">
+      
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Printing.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.1343.22, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1343.22\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.1343.22, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1343.22\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.1343.22, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1343.22\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Windows.Shell, Version=3.5.41019.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="NugetDemo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FoxLearn.1.0.0\lib\NugetDemo.dll</HintPath>
+    </Reference>
+    <Reference Include="ReachFramework" />
+    <Reference Include="RibbonControlsLibrary, Version=3.5.41019.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="sapbusinessobjects.wpf.viewer, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="SAPBusinessObjects.WPF.ViewerShared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="wpftoolkit">
+      <HintPath>F:\Programming\Csharp ClickSite\part70\wpftoolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Models\SalesChartByCustomerName_Model.cs" />
+    <Compile Include="Models\SalesChart_Model.cs" />
+    <Compile Include="Module\PublicMethod.cs" />
+    <Compile Include="Module\PublicVariable.cs" />
+    <Compile Include="ViewModel\SalesChartByCustomerName_ViewModel.cs" />
+    <Compile Include="ViewModel\SalesChart_ViewModel.cs" />
+    <Compile Include="Views\SalesChartByCustomerName_View.xaml.cs">
+      <DependentUpon>SalesChartByCustomerName_View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SalesChart_View.xaml.cs">
+      <DependentUpon>SalesChart_View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\BaseReporting_Window.xaml.cs">
+      <DependentUpon>BaseReporting_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Invoice_Window.xaml.cs">
+      <DependentUpon>Invoice_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Sales_Charts_Window.xaml.cs">
+      <DependentUpon>Sales_Charts_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\SetNewPassword_Window.xaml.cs">
+      <DependentUpon>SetNewPassword_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ShowingInvoice_Winsdows .xaml.cs">
+      <DependentUpon>ShowingInvoice_Winsdows .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ShowingReport_Window.xaml.cs">
+      <DependentUpon>ShowingReport_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ShowingUserLog_Winsdow.xaml.cs">
+      <DependentUpon>ShowingUserLog_Winsdow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\TransactionInProduct_AddAndEdit.xaml.cs">
+      <DependentUpon>TransactionInProduct_AddAndEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ProductPrice_RegisterAndEdit_Windows .xaml.cs">
+      <DependentUpon>ProductPrice_RegisterAndEdit_Windows .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Product_RegisterAndEdit_Windows .xaml.cs">
+      <DependentUpon>Product_RegisterAndEdit_Windows .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\LicencingAndRegisterFirstUser_Window.xaml.cs">
+      <DependentUpon>LicencingAndRegisterFirstUser_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\User_RegisterAndEdit_Window.xaml.cs">
+      <DependentUpon>User_RegisterAndEdit_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ProductPriceManagment_Window.xaml.cs">
+      <DependentUpon>ProductPriceManagment_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Customer_RegisterAndEdit_Windows.xaml.cs">
+      <DependentUpon>Customer_RegisterAndEdit_Windows.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ShowingProductEntryAndExit_Window.xaml.cs">
+      <DependentUpon>ShowingProductEntryAndExit_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ShowingProduct_Window.xaml.cs">
+      <DependentUpon>ShowingProduct_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ShowingCustomer_Winsdows.xaml.cs">
+      <DependentUpon>ShowingCustomer_Winsdows.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ShowingDefindUsers_Window.xaml.cs">
+      <DependentUpon>ShowingDefindUsers_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\MainWindows.xaml.cs">
+      <DependentUpon>MainWindows.xaml</DependentUpon>
+    </Compile>
+    <Page Include="LoginWindows.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LoginWindows.xaml.cs">
+      <DependentUpon>LoginWindows.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\SalesChartByCustomerName_View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SalesChart_View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\BaseReporting_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Invoice_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Sales_Charts_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\SetNewPassword_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\ShowingInvoice_Winsdows .xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\ShowingReport_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ShowingUserLog_Winsdow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\TransactionInProduct_AddAndEdit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\ProductPrice_RegisterAndEdit_Windows .xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Product_RegisterAndEdit_Windows .xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\LicencingAndRegisterFirstUser_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\User_RegisterAndEdit_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\ProductPriceManagment_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Customer_RegisterAndEdit_Windows.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\ShowingProductEntryAndExit_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\ShowingProduct_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\ShowingCustomer_Winsdows.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\ShowingDefindUsers_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\MainWindows.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Themes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LoginLock_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UserLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\RaibbonHeaderItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AboutMe.png" />
+    <Resource Include="Images\ContactUs.png" />
+    <Resource Include="Images\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AddUser.png" />
+    <Resource Include="Images\Backup.png" />
+    <Resource Include="Images\ChangeUser.png" />
+    <Resource Include="Images\Enter.png" />
+    <Resource Include="Images\ExpensivePrice.png" />
+    <Resource Include="Images\forgetPassword.png" />
+    <Resource Include="Images\Gmail.png" />
+    <Resource Include="Images\icons8-in-inventory-50.png" />
+    <Resource Include="Images\Items.png" />
+    <Resource Include="Images\ItemsInventory.png" />
+    <Resource Include="Images\Licensing.png" />
+    <Resource Include="Images\Logout.png" />
+    <Resource Include="Images\password.png" />
+    <Resource Include="Images\PriceChart.png" />
+    <Resource Include="Images\UserDefind.png" />
+    <Resource Include="Images\UserPermission.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SystemSetting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SkyeBackGround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Paeez.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BussinesEntity\BussinesEntity.csproj">
+      <Project>{7dca6a31-accf-481a-892a-83323aef3d72}</Project>
+      <Name>BussinesEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BussinesLogicLayer\BussinesLogicLayer.csproj">
+      <Project>{064f1344-b9e1-4d47-8f9a-1c39cddb6a42}</Project>
+      <Name>BussinesLogicLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AddProductImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UserLogForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\UserInputAndExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DateTime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Close.png" />
+    <Resource Include="Images\Delete.png" />
+    <Resource Include="Images\Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\customerreport.png" />
+    <Resource Include="Images\itemreport.png" />
+    <Resource Include="Images\profitlossreport.png" />
+    <Resource Include="Images\receiptreport.png" />
+    <Resource Include="Images\reciept.png" />
+    <Resource Include="Images\saleschart.png" />
+    <Resource Include="Images\salesreport.png" />
+    <Resource Include="Images\userreport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\RightArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Arrow2_1.png" />
+    <Resource Include="Images\Arrow_2.png" />
+    <Resource Include="Images\Arrow_3.png" />
+    <Resource Include="Images\LoadInformationLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\AddInvoiceLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ReciptWindowSmallLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="CRQUERYENGINE">
+      <Guid>{ADBDC453-4349-44B9-AB2C-77688E03C87D}</Guid>
+      <VersionMajor>14</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalAnalysisCommLayerLib">
+      <Guid>{C0834020-D14B-4AC0-90EF-6482581A561B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalEnterpriseLib">
+      <Guid>{214B31B9-9DE7-41CF-986C-367CEF61E6CB}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalInfoStoreLib">
+      <Guid>{BBA3CFDE-2E4A-4D28-A81D-7E61CA90582F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalPluginMgrLib">
+      <Guid>{F0C56992-6006-4EFB-B2B7-86B7BCBCD73A}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsCommonObjectModelLib">
+      <Guid>{C0F6823E-6000-4123-8D93-856B51E1EA48}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsControllersLib">
+      <Guid>{C0A90CCF-4E09-43F9-87B9-E710671C9D79}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsCubeDefModelLib">
+      <Guid>{C0E87AB0-6EFC-4331-A6FA-401D907DC7E7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsDataDefModelLib">
+      <Guid>{C0B0DC68-BE45-4D76-BA0E-8CFCA93F9D1F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportSourceLib">
+      <Guid>{C054956B-2A28-45DE-AB8F-3F6E77BC8C2B}</Guid>
+      <VersionMajor>14</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsReportDefModelLib">
+      <Guid>{C05CCC94-4C05-460C-9DF8-D114AE4AED1A}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalSharedElementPluginLib">
+      <Guid>{C7BB9409-C3F0-4C57-A093-0541DA2D1932}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\zh-CHT.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\zh-CHS.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\vi.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\uk.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\tr.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\sv.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\sr.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\sk.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\ru.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\ro.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\pt.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\pt-BR.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\pl.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\nl.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\nb-NO.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\lt.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\ku.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\ko.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\ka.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\ja.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\it.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\id.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\hu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\hr.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\gl-ES.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\fr.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\fa.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\eu-ES.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\es.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\en.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\en-GB.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\el-GR.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\de.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\cs.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\ca-ES.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\bh.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\bg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\be.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Localization\ar.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BaseReporting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.1343.22\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.1343.22\build\Microsoft.Web.WebView2.targets'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.1343.22\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.1343.22\build\Microsoft.Web.WebView2.targets')" />
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
